@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
 				"back",
 				"background-color\tproperty"
 			],
@@ -116,10 +120,6 @@
 				"cover"
 			],
 			[
-				"backg",
-				"background-image"
-			],
-			[
 				"space",
 				"space-between"
 			],
@@ -227,7 +227,25 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 196,
+				"buffer_size": 2565,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles.scss",
+			"settings":
+			{
+				"buffer_size": 11213,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts.js",
+			"settings":
+			{
+				"buffer_size": 0,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -241,16 +259,16 @@
 	"command_palette":
 	{
 		"height": 154.0,
-		"last_filter": "termain",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"termain",
-				"Terminal View: Open Bash Terminal"
-			],
-			[
 				"Package Control: ",
 				"Package Control: Install Package"
+			],
+			[
+				"termain",
+				"Terminal View: Open Bash Terminal"
 			],
 			[
 				"install",
@@ -286,11 +304,11 @@
 	"file_history":
 	[
 		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleetrecruitment.html",
+		"/home/paranoidangel/Projects/Tribute/tribute.html",
 		"/home/paranoidangel/Projects/red-button/public/index.html",
 		"/home/paranoidangel/Projects/red-button/src/index.css",
 		"/home/paranoidangel/Projects/red-button/src/index.js",
 		"/home/paranoidangel/Projects/red-button/src/App.js",
-		"/home/paranoidangel/Projects/Tribute/tribute.html",
 		"/home/paranoidangel/Projects/Click the Dot/clickthedot.html",
 		"/home/paranoidangel/Projects/freeCodeCamp/roman-numeral-converter.json",
 		"/home/paranoidangel/Projects/JavaScript30-master/01 - JavaScript Drum Kit/style.css",
@@ -354,7 +372,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -363,15 +381,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 196,
+						"buffer_size": 2565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
+								1714,
+								1714
 							]
 						],
 						"settings":
@@ -380,10 +398,66 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 131.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -424,11 +498,15 @@
 	{
 		"height": 0.0
 	},
+	"output.exec":
+	{
+		"height": 108.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/SASS Build/SASS - Compressed.sublime-build",
 	"project": "portfolio.sublime-project",
 	"replace":
 	{
@@ -446,12 +524,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

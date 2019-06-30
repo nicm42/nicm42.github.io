@@ -10,8 +10,22 @@
 	text-align: center;
 	font-family: 'Khula', sans-serif;
 }
+.project{
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #cccccc;
+	-webkit-box-shadow: 3px 3px 3px #cccccc;
+	-moz-box-shadow: 3px 3px 3px #cccccc;
+	margin: 10px;
+	&:hover{
+		box-shadow: 6px 6px 6px #aaaaaa;
+		-webkit-box-shadow: 6px 6px 6px #aaaaaa;
+		-moz-box-shadow: 6px 6px 6px #aaaaaa;
+	}
+}
 .thumbnail{
-	height: 200px;
+	max-height: 200px;
+	max-width: 300px;
 }
 .tools{
 	font-family: 'Space Mono', monospace;
