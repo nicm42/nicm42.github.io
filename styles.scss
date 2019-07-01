@@ -11,12 +11,16 @@
 	font-family: 'Khula', sans-serif;
 }
 .project{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	border: 1px solid #cccccc;
 	border-radius: 3px;
 	box-shadow: 3px 3px 3px #cccccc;
 	-webkit-box-shadow: 3px 3px 3px #cccccc;
 	-moz-box-shadow: 3px 3px 3px #cccccc;
 	margin: 10px;
+	padding: 5px;
 	&:hover{
 		box-shadow: 6px 6px 6px #aaaaaa;
 		-webkit-box-shadow: 6px 6px 6px #aaaaaa;
@@ -26,9 +30,16 @@
 .thumbnail{
 	max-height: 200px;
 	max-width: 300px;
+	margin: 10px;
+}
+.cardHeader{
+	background-color: red;
+	font-size: 1.2em;
 }
 .tools{
 	font-family: 'Space Mono', monospace;
+	background-color: #cccccc;
+	padding: 5px;
 }
 
 .contact{
