@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"flex",
+				"flex-basis\tproperty"
+			],
+			[
 				"font",
 				"font-size\tproperty"
 			],
@@ -14,10 +26,6 @@
 			[
 				"back",
 				"background-color\tproperty"
-			],
-			[
-				"flex",
-				"flex-direction\tproperty"
 			],
 			[
 				"ali",
@@ -68,10 +76,6 @@
 				"repeat-x"
 			],
 			[
-				"bac",
-				"background-size"
-			],
-			[
 				"backgro",
 				"background-image"
 			],
@@ -86,10 +90,6 @@
 			[
 				"tabl",
 				"table-caption"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"backgr",
@@ -227,7 +227,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2688,
+				"buffer_size": 3334,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -236,7 +236,7 @@
 			"file": "styles.scss",
 			"settings":
 			{
-				"buffer_size": 11418,
+				"buffer_size": 679,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -246,23 +246,6 @@
 			"settings":
 			{
 				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/index.html",
-			"settings":
-			{
-				"buffer_size": 1135,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/js/script.js",
-			"settings":
-			{
-				"buffer_size": 794,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -320,9 +303,10 @@
 	},
 	"file_history":
 	[
+		"/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/index.html",
+		"/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/js/script.js",
 		"/home/paranoidangel/.config/sublime-text-3/Packages/User/SublimeOnSaveBuild.sublime-settings",
 		"/home/paranoidangel/.config/sublime-text-3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
-		"/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/js/script.js",
 		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleetrecruitment.html",
 		"/home/paranoidangel/Projects/Tribute/tribute.html",
 		"/home/paranoidangel/Projects/red-button/public/index.html",
@@ -361,7 +345,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -392,7 +376,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -401,15 +385,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2688,
+						"buffer_size": 3334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1863,
-								1863
+								499,
+								499
 							]
 						],
 						"settings":
@@ -418,10 +402,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 551.0,
+						"translation.y": 26.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -430,15 +414,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11418,
+						"buffer_size": 679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								725,
-								725
+								40,
+								40
 							]
 						],
 						"settings":
@@ -452,10 +436,10 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 296.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -484,67 +468,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								294,
-								294
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								564,
-								564
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"use_tab_stops": false
-						},
-						"translation.x": 54.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
