@@ -18,3 +18,11 @@ navIcon[0].addEventListener('click', function(){
 		link.classList.toggle('show');
 	}
 })
+
+//Move avatar up to be level with the top of the navigation
+const nav = document.getElementsByClassName('navigation');
+const navHeight = nav[0].offsetHeight;
+const avatar = document.getElementById('avatar');
+avatar.style.top = navHeight * -1 + 'px';
+//And resize it to fit the navHeight
+document.getElementById('avatar-img').style.height = navHeight + 'px';
