@@ -1,13 +1,23 @@
 body{
 	font-family: 'Khula', sans-serif;
 	scroll-behavior: smooth;
+	text-align: center;
+	color: black;
 	a{
 		text-decoration: none;
 	}
 }
+h1{
+	font-size: 3em;
+	margin: 0;
+}
+h2{
+	font-size: 2em;
+	margin: 0;
+}
 
 .navigation{
-	background-color: rgba(red, 0.5);
+	background-color: #FF6161;
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -46,7 +56,7 @@ body{
 
 .header{
 	position: relative;
-	background-color: rgba(red, 0.5);
+	background-color: #FF6161;
 	text-align: center;
 	color: black;
 	//width: 100%;
@@ -58,19 +68,25 @@ body{
 	top: 0px;
 	left: 0;
 }
-.name{
+/*.name{
 	font-size: 3em;
-}
+}*/
 .about{
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
+#projects{
+	background-color: darken(white, 1%);
+}
 .projects{
-	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	text-align: center;
+	//text-align: center;
+	color: lighten(black, 20%);
+}
+#projects-header{
+	color: #FF6161;
 }
 .project{
 	display: flex;
@@ -92,13 +108,13 @@ body{
 	position: relative;
 	margin: 5px;
 	//background-color: red;
-	border: 2px solid rgba(red, 0.5);
+	border: 2px solid #FF6161;
 	color: black;
 	padding: 2px 5px 2px 5px;
 	&:hover{
 		//background-color: darken(white, 2%);
-		border-color: red;
-		color: red;
+		border-color: #FF6161;
+		color: #FF6161;
 	}
 	&:active{
 		top: 2px;
@@ -107,22 +123,24 @@ body{
 }
 .title{
 	font-weight: bold;
+	color: #FF6161;
 }
 .tools{
-	//color: rgba(blue, 0.7);
 	font-family: 'Space Mono', sans-serif;
+	color: gray;
+	font-size: 0.9em
 }
 .links{
 	margin-top: 10px;
 }
 
 .contact{
-	background-color: rgba(red, 0.5);
+	background-color: #FF6161;
 	text-align: center;
 	//width: 100%;
 	//height: 100%;
 	//background: linear-gradient(to bottom right, white 0%, white 50%, red 50%, red 100%);
-	font-size: 1.5em;
+	//font-size: 1.5em;
 	a{
 		color: black;
 	}

@@ -4,20 +4,84 @@
 		"selected_items":
 		[
 			[
-				"bac",
-				"background"
+				"gete",
+				"getElementById\tmethod"
+			],
+			[
+				"nav",
+				"navHeight\tconst"
+			],
+			[
+				"al",
+				"align-self"
+			],
+			[
+				"alg",
+				"align-items"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"add",
+				"addEventListener\tmethod"
+			],
+			[
+				"do",
+				"document\twarning"
+			],
+			[
+				"flex-",
+				"flex-direction\tproperty"
+			],
+			[
+				"bak",
+				"background-color"
 			],
 			[
 				"margin",
-				"margin\tproperty"
+				"margin-right\tproperty"
 			],
 			[
-				"flex",
-				"flex-basis\tproperty"
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"fle",
+				"flex-start\tjustify-content"
 			],
 			[
 				"font",
 				"font-size\tproperty"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"r",
+				"rgba(color, alpha)\tcolor"
+			],
+			[
+				"rg",
+				"rgba(color, alpha)\tborder-color"
+			],
+			[
+				"border-c",
+				"border-color\tproperty"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"flex",
+				"flex-basis\tproperty"
 			],
 			[
 				"backg",
@@ -64,10 +128,6 @@
 				"keydown"
 			],
 			[
-				"flex-",
-				"flex-flow"
-			],
-			[
 				"align",
 				"align-items"
 			],
@@ -82,10 +142,6 @@
 			[
 				"team",
 				"team-photo"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"tabl",
@@ -110,10 +166,6 @@
 			[
 				"skew",
 				"skewX()"
-			],
-			[
-				"tran",
-				"transform"
 			],
 			[
 				"c",
@@ -227,7 +279,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3334,
+				"buffer_size": 4166,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -236,16 +288,16 @@
 			"file": "styles.scss",
 			"settings":
 			{
-				"buffer_size": 679,
+				"buffer_size": 2119,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scripts.js",
+			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1032,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -303,13 +355,15 @@
 	},
 	"file_history":
 	[
+		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleet.js",
+		"/home/paranoidangel/Projects/Starfleet Recruitment/styles.less",
+		"/home/paranoidangel/Projects/red-button/public/index.html",
+		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleetrecruitment.html",
 		"/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/index.html",
 		"/home/paranoidangel/Projects/AJAX Demo/minicourse-ajax-project/js/script.js",
 		"/home/paranoidangel/.config/sublime-text-3/Packages/User/SublimeOnSaveBuild.sublime-settings",
 		"/home/paranoidangel/.config/sublime-text-3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
-		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleetrecruitment.html",
 		"/home/paranoidangel/Projects/Tribute/tribute.html",
-		"/home/paranoidangel/Projects/red-button/public/index.html",
 		"/home/paranoidangel/Projects/red-button/src/index.css",
 		"/home/paranoidangel/Projects/red-button/src/index.js",
 		"/home/paranoidangel/Projects/red-button/src/App.js",
@@ -359,6 +413,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"height",
+			"icon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -376,7 +432,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -385,24 +441,30 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3334,
+						"buffer_size": 4166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
+								764,
+								764
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 26.0,
+						"translation.y": 101.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -414,15 +476,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 679,
+						"buffer_size": 2119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								954,
+								954
 							]
 						],
 						"settings":
@@ -436,38 +498,45 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 596.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "scripts.js",
+					"file": "script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1032,
+								1032
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 131.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
