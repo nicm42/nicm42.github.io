@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
 	<title>Nic</title>
+    <meta charset="utf-8" />
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Khula|Space+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-	<header class="header">
+	<nav class="navigation">
+		<span class="nav-icon"><i class="fas fa-bars"></i></span>
+		<a href="#header" class="nav-link active">About</a>
+		<a href="#work" class="nav-link">Work</a>
+		<a href="#contact" class="nav-link">Contact</a>
+	</nav>
+
+	<header class="header" id="header">
 		<div class="avatar"><img src="./imgs/nic100.jpg" alt="nic"></div>
 		<div class="name">Hi, I'm Nic</div>
 		<div class="about">I'm a front end developer near Oxford.</div>
@@ -21,7 +30,7 @@
 			<i class="fab fa-react" title="React"></i>
 		</div>-->
 	</header>
-	<main>
+	<main id="work">
 		<section class="projects" id="pages">
 			<article class="project"><figure><img class="thumbnail" src="./imgs/starfleet.jpg" alt="Starfleet Recruitment"><br><figcaption class="title">Starfleet Recruitment</figcaption><div class="tools">HTML LESS Javascript</div><div class="links"><a href="https://codepen.io/nicm42/full/qGKLov" class="button">View</a><a href="https://github.com/nicm42/starfleet-recruitment" class="button">Code</a></div></figure></article>
 
@@ -34,7 +43,7 @@
 			<article class="project"><figure><img class="thumbnail" src="./imgs/clickthedot.jpg" alt="Click the Dot thumbnail"><br><figcaption class="title">Click the Dot</figcaption><div class="tools">HTML CSS Javascript</div><div class="links"><a href="https://codepen.io/nicm42/full/zQxNdE" class="button">Play</a><a href="https://github.com/nicm42/clickthedot" class="button">Code</a></div></figure></article>			
 
 		</section>
-		<section class="contact">
+		<section class="contact" id="contact">
 			Contact
 			<div class="icons">
 				<span class="icon"><a href="https://github.com/nicm42/" title="Github"><i class="fab fa-github"></i></a></span>

@@ -1,8 +1,46 @@
 body{
 	font-family: 'Khula', sans-serif;
+	scroll-behavior: smooth;
 	a{
 		text-decoration: none;
 	}
+}
+
+.navigation{
+	background-color: rgba(red, 0.5);
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	@media screen and (max-width: 400px){
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	a{
+		color: black;
+		padding-left: 5px;
+		padding-right: 5px;
+		&.active{
+			color: white;
+		}
+	}
+}
+.nav-icon{
+	color: black;
+	cursor: pointer;
+	display: none;
+	@media screen and (max-width: 400px){
+		display: block;
+	}
+}
+.nav-link{
+	@media screen and (max-width: 400px){
+		display: none;
+	}
+}
+.show{
+	display: block;
 }
 
 .header{
@@ -41,8 +79,8 @@ body{
 	//border: 2px solid gray;
 	margin: 2px;
 	//background-color: darken(white, 2%);
-	@media only screen and (max-width: 400px){
-		//flex-basis: 100%;
+	@media screen and (max-width: 400px){
+		width: 90%
 	}
 }
 .thumbnail{
@@ -88,6 +126,6 @@ body{
 	}
 }
 .icon{
-	margin-left: 5px;
-	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
