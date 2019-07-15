@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"li",
+				"lighter-text"
+			],
+			[
+				"pr",
+				"projects-background"
+			],
+			[
+				"bac",
+				"header-background"
+			],
+			[
+				"act",
+				"active-colour"
+			],
+			[
+				"tex",
+				"text-colour"
+			],
+			[
+				"head",
+				"header-background"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"mar",
+				"margin-bottom\tproperty"
+			],
+			[
 				"gete",
 				"getElementById\tmethod"
 			],
@@ -60,10 +92,6 @@
 				"font-size\tproperty"
 			],
 			[
-				"mar",
-				"margin-top\tproperty"
-			],
-			[
 				"r",
 				"rgba(color, alpha)\tcolor"
 			],
@@ -74,10 +102,6 @@
 			[
 				"border-c",
 				"border-color\tproperty"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"flex",
@@ -98,10 +122,6 @@
 			[
 				"border",
 				"border-radius\tproperty"
-			],
-			[
-				"text",
-				"text-align\tproperty"
 			],
 			[
 				"border-r",
@@ -212,10 +232,6 @@
 				"grid-template-columns"
 			],
 			[
-				"head",
-				"header\tTag"
-			],
-			[
 				"box",
 				"boxNumber"
 			],
@@ -279,7 +295,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4166,
+				"buffer_size": 4724,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -288,7 +304,7 @@
 			"file": "styles.scss",
 			"settings":
 			{
-				"buffer_size": 2119,
+				"buffer_size": 2515,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -355,6 +371,7 @@
 	},
 	"file_history":
 	[
+		"/home/paranoidangel/Projects/Portfolio/index.html",
 		"/home/paranoidangel/Projects/Starfleet Recruitment/starfleet.js",
 		"/home/paranoidangel/Projects/Starfleet Recruitment/styles.less",
 		"/home/paranoidangel/Projects/red-button/public/index.html",
@@ -413,6 +430,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-size",
+			"red",
 			"height",
 			"icon"
 		],
@@ -432,7 +451,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -441,33 +460,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4166,
+						"buffer_size": 4724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								764,
-								764
+								978,
+								978
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 4,
-								"tabSize": 4
-							}
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 101.0,
+						"translation.y": 150.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -476,15 +489,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2119,
+						"buffer_size": 2515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								954,
-								954
+								2277,
+								2277
 							]
 						],
 						"settings":
@@ -498,10 +511,10 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 596.0,
+						"translation.y": 1518.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -517,8 +530,8 @@
 						"selection":
 						[
 							[
-								1032,
-								1032
+								882,
+								882
 							]
 						],
 						"settings":
@@ -536,7 +549,7 @@
 						"translation.y": 131.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
