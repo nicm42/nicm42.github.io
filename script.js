@@ -8,7 +8,7 @@ for(let link of navLinks){
 	})
 }
 
-//Add active class to the nav element showing on scroll
+//TODO Add active class to the nav element showing on scroll
 
 //Show the menu when you click on the nav-icon
 const navIcon = document.getElementsByClassName('nav-icon');

@@ -3,7 +3,7 @@ $text-colour: black;
 $active-colour: white;
 $lighter-text: lighten($text-colour, 20%);
 $header-background: #ff6161;
-$projects-background: darken(white, 1%);
+$section-background: darken(white, 1%);
 
 $biggest: 3em;
 $bigger: 2em;
@@ -13,6 +13,7 @@ $small: 0.9em;
 /**********************General**********************/
 body{
 	font-family: 'Khula', sans-serif;
+	font-size: 1em;
 	scroll-behavior: smooth;
 	text-align: center;
 	color: black;
@@ -28,6 +29,11 @@ h2{
 	font-size: $bigger;
 	margin: 0;
 }
+hr{
+	width: 80%;
+	border: 1px solid $header-background;
+	border-radius: 3px;
+}
 
 /**********************Nav menu**********************/
 .navigation{
@@ -40,6 +46,7 @@ h2{
 	@media screen and (max-width: 600px){
 		flex-direction: column;
 		align-items: flex-end;
+		position: absolute;
 	}
 	a{
 		color: $text-colour;
@@ -80,13 +87,28 @@ h2{
 	top: 0px;
 	left: 0;
 }
-.about{
+
+/**********************About**********************/
+/*.about{
 	font-size: $big;
+}*/
+#about{
+	background-color: $section-background;
+	a{
+		color: $header-background;
+		text-decoration: underline;
+		&:hover{
+			color: $text-colour;
+		}
+	}
+}
+#about-header{
+	color: $header-background;
 }
 
 /**********************Projects**********************/
 #projects{
-	background-color: $projects-background;
+	background-color: $section-background;
 }
 .projects{
 	display: flex;
@@ -145,7 +167,7 @@ h2{
 		color: $text-colour;
 	}
 }
-.icon{
+.contact-icon{
 	padding-left: 5px;
 	padding-right: 5px;
 }
