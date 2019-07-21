@@ -15,8 +15,6 @@ for(let link of navLinks){
 	})
 }
 
-//TODO Add active class to the nav element showing on scroll
-
 //Show/hide the menu when you click on the nav-icon
 navIcon[0].addEventListener('click', function(){
 	for(let link of navLinks){
