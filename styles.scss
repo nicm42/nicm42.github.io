@@ -10,6 +10,8 @@ $bigger: 2em;
 $big: 1.2em;
 $small: 0.9em;
 
+$breakpoint: 600px;
+
 /**********************General**********************/
 body{
 	font-family: 'Khula', sans-serif;
@@ -43,10 +45,10 @@ hr{
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: $breakpoint){
 		flex-direction: column;
 		align-items: flex-end;
-		position: absolute;
+		z-index: 1;
 	}
 	a{
 		color: $text-colour;
@@ -62,17 +64,31 @@ hr{
 	color: black;
 	cursor: pointer;
 	display: none;
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: $breakpoint){
 		display: block;
 	}
 }
 .nav-link{
-	@media screen and (max-width: 600px){
+	display: inline-block;
+	@media screen and (max-width: $breakpoint){
 		display: none;
+	}
+}
+#links{
+	background-color: $header-background;
+	@media screen and (max-width: $breakpoint){
+		position: absolute;
+		top: 20px;
+		right: 0;
+		//width: 100%;
+		//text-align: right;
 	}
 }
 .show{
 	display: block;
+}
+.hide{
+	display: none;
 }
 
 /**********************Header**********************/
@@ -86,12 +102,10 @@ hr{
 	position: absolute;
 	top: 0px;
 	left: 0;
+	z-index: 2;
 }
 
 /**********************About**********************/
-/*.about{
-	font-size: $big;
-}*/
 #about{
 	background-color: $section-background;
 	a{

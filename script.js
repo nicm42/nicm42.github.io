@@ -1,20 +1,25 @@
 //Add the active class to the nav element clicked (removing it from the others)
+//Also hide the menu when you click on a link on mobile
 const navLinks = document.getElementsByClassName('nav-link');
+const navIcon = document.getElementsByClassName('nav-icon');
 for(let link of navLinks){
 	link.addEventListener('click', function(){
 		let activeLink = document.getElementsByClassName('active');
 		activeLink[0].classList.remove('active');
 		this.classList.add('active');
+		if(window.innerWidth < 600){
+			for(let i=0; i<navLinks.length; i++){
+				navLinks[i].classList.toggle('show');
+			}
+		}
 	})
 }
 
 //TODO Add active class to the nav element showing on scroll
 
-//Show the menu when you click on the nav-icon
-const navIcon = document.getElementsByClassName('nav-icon');
+//Show/hide the menu when you click on the nav-icon
 navIcon[0].addEventListener('click', function(){
 	for(let link of navLinks){
-		//link.style.display = 'block';
 		link.classList.toggle('show');
 	}
 })
