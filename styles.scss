@@ -72,8 +72,7 @@ hr{
 		color: $text-colour;
 		padding-left: 5px;
 		padding-right: 5px;
-		//transition: all 0.3s ease-in;
-		transition: height 0s 100ms, opacity 900ms 0s;
+		transition: all 0.3s ease-in;
 		&:hover{
 			color: $active-colour;
 		}
@@ -94,11 +93,14 @@ hr{
 .nav-link{
 	display: inline-block;
 	@media screen and (max-width: $breakpoint){
-		display: none;
+		//display: none;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
 	}
 }
 #links{
-	background-color: $header-background;
+	background-color: transparent;
 	@media screen and (max-width: $breakpoint){
 		position: absolute;
 		top: 20px;
@@ -108,10 +110,13 @@ hr{
 	}
 }
 .show{
-	display: block;
+	//display: block;
+	opacity: 1;
+	background-color: $header-background;
 }
 .hide{
-	display: none;
+	//display: none;
+	opacity: 0;
 }
 
 /**********************Header**********************/
