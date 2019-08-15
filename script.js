@@ -2,18 +2,6 @@
 //Also hide the menu when you click on a link on mobile
 const navLinks = document.getElementsByClassName('nav-link');
 const navIcon = document.getElementsByClassName('nav-icon');
-/*for(let link of navLinks){
-	link.addEventListener('click', function(){
-		let activeLink = document.getElementsByClassName('active');
-		activeLink[0].classList.remove('active');
-		this.classList.add('active');
-		if(window.innerWidth < 600){
-			for(let i=0; i<navLinks.length; i++){
-				navLinks[i].classList.toggle('show');
-			}
-		}
-	})
-}*/
 
 //Show/hide the menu when you click on the nav-icon
 navIcon[0].addEventListener('click', function(){
@@ -29,3 +17,36 @@ const avatar = document.getElementById('avatar');
 avatar.style.top = navHeight * -1 + 'px';
 //And resize it to fit the navHeight
 document.getElementById('avatar-img').style.height = navHeight + 'px';
+
+//Make all the elements of the projects boxes the same height
+const captions = document.getElementsByClassName('title');
+const descriptions = document.getElementsByClassName('description');
+const tools = document.getElementsByClassName('tools');
+setHeights();
+//and we also need to do it if the window is resized
+window.addEventListener('resize', setHeights);
+
+function setHeights(){
+	setHeight(captions);
+	setHeight(descriptions);
+	setHeight(tools);	
+}
+
+function setHeight(elements){
+	resetHeight(elements); //first need to reset heights, in case they should now be smaller
+	let maxHeight = 0;
+	for(let element of elements){
+		if(element.offsetHeight > maxHeight){
+			maxHeight = element.offsetHeight;
+		}
+	}
+	for(element of elements){
+		element.style.height = maxHeight + 'px';
+	}
+}
+
+function resetHeight(elements){
+	for(element of elements){
+		element.style.height = null;
+	}	
+}
