@@ -13,10 +13,11 @@ navIcon[0].addEventListener('click', function(){
 //Move avatar up to be level with the top of the navigation
 const nav = document.getElementsByClassName('navigation');
 const navHeight = nav[0].offsetHeight;
-const avatar = document.getElementById('avatar');
-avatar.style.top = navHeight * -1 + 'px';
+/*const avatar = document.getElementById('avatar');
+avatar.style.top = navHeight * -1 + 'px';*/
 //And resize it to fit the navHeight
-document.getElementById('avatar-img').style.height = navHeight + 'px';
+let avatarHeight = navHeight - 2; //to account for border
+document.getElementById('avatar-img').style.height = avatarHeight + 'px';
 
 //Make all the elements of the projects boxes the same height
 const captions = document.getElementsByClassName('title');

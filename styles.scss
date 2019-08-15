@@ -73,7 +73,8 @@ hr{
 		padding-left: 5px;
 		padding-right: 5px;
 		//transition: all 0.3s ease-in;
-		&.active{
+		transition: height 0s 100ms, opacity 900ms 0s;
+		&:hover{
 			color: $active-colour;
 		}
 	}
