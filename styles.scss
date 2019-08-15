@@ -2,7 +2,8 @@
 $text-colour: black;
 $active-colour: white;
 $lighter-text: lighten($text-colour, 20%);
-$header-background: #ff6161;
+//$header-background: #ff6161;
+$header-background: #ff0000;
 $section-background: darken(white, 1%);
 
 $biggest: 3em;
@@ -128,10 +129,11 @@ hr{
 .skills-icons{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .skill{
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
