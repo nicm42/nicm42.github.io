@@ -3,6 +3,8 @@ $text-colour: black;
 $active-colour: white;
 $lighter-text: lighten($text-colour, 20%);
 //$header-background: #ff6161;
+//$header-background: #f2557a;
+//$header-background: #e41749;
 $header-background: #ff0000;
 $section-background: darken(white, 1%);
 
@@ -36,6 +38,9 @@ hr{
 	width: 80%;
 	border: 1px solid $header-background;
 	border-radius: 3px;
+}
+.header-text{
+	padding-top: 30px; //stops section headers going behind the menu
 }
 
 /**********************Nav menu**********************/
