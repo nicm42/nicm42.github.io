@@ -2,7 +2,7 @@
 //Also hide the menu when you click on a link on mobile
 const navLinks = document.getElementsByClassName('nav-link');
 const navIcon = document.getElementsByClassName('nav-icon');
-for(let link of navLinks){
+/*for(let link of navLinks){
 	link.addEventListener('click', function(){
 		let activeLink = document.getElementsByClassName('active');
 		activeLink[0].classList.remove('active');
@@ -13,7 +13,7 @@ for(let link of navLinks){
 			}
 		}
 	})
-}
+}*/
 
 //Show/hide the menu when you click on the nav-icon
 navIcon[0].addEventListener('click', function(){
