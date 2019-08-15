@@ -123,6 +123,18 @@ hr{
 	color: $header-background;
 }
 
+
+/**********************Skills**********************/
+.skills-icons{
+	display: flex;
+	justify-content: center;
+}
+.skill{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
 /**********************Projects**********************/
 #projects{
 	background-color: $section-background;
