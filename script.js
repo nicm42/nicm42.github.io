@@ -18,10 +18,13 @@ let avatarHeight = navHeight - 2; //to account for border
 document.getElementById('avatar-img').style.height = avatarHeight + 'px';
 
 //Make all the elements of the projects boxes the same height
+//But can only do it once everything is loaded
 const captions = document.getElementsByClassName('title');
 const descriptions = document.getElementsByClassName('description');
 const tools = document.getElementsByClassName('tools');
-setHeights();
+window.addEventListener('load', (event) => {
+	setHeights();	
+})
 //and we also need to do it if the window is resized
 window.addEventListener('resize', setHeights);
 
