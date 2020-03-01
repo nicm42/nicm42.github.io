@@ -13,7 +13,7 @@ $small: 0.9em;
 $breakpoint: 600px;
 
 /**********************Mixins**********************/
-@mixin linearGradient($top, $bottom){
+@mixin linearGradient($top, $bottom) {
     background: $top; /* Old browsers */
     background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
@@ -24,35 +24,35 @@ $breakpoint: 600px;
 }
 
 /**********************General**********************/
-body{
+body {
 	font-family: 'Khula', sans-serif;
 	font-size: 1em;
 	scroll-behavior: smooth;
 	text-align: center;
 	color: black;
-	a{
+	a {
 		text-decoration: none;
 	}
 }
-h1{
+h1 {
 	font-size: $biggest;
 	margin: 0;
 }
-h2{
+h2 {
 	font-size: $bigger;
 	margin: 0;
 }
-hr{
+hr {
 	width: 80%;
 	border: 1px solid $header-background;
 	border-radius: 3px;
 }
-.header-text{
+.header-text {
 	padding-top: 30px; //stops section headers going behind the menu
 }
 
 /**********************Nav menu**********************/
-.navigation{
+.navigation {
 	background-color: $header-background;
 	position: sticky;
 	top: 0;
@@ -60,40 +60,40 @@ hr{
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
-	a{
+	a {
 		color: $text-colour;
 		padding-left: 5px;
 		padding-right: 5px;
 		transition: all 0.3s ease-in;
-		&:hover{
+		&:hover {
 			color: $active-colour;
 		}
 	}
 }
-#avatar{
+#avatar {
 	height: 30px;
 	border: 1px solid $header-background;
 }
-.nav-icon{
+.nav-icon {
 	color: black;
 	cursor: pointer;
 	display: none;
-	@media screen and (max-width: $breakpoint){
+	@media screen and (max-width: $breakpoint) {
 		display: block;
 	}
 }
-.nav-link{
+.nav-link {
 	display: inline-block;
-	@media screen and (max-width: $breakpoint){
+	@media screen and (max-width: $breakpoint) {
 		//display: none;
 		opacity: 0;
 		display: flex;
 		flex-direction: column;
 	}
 }
-#links{
+#links {
 	background-color: transparent;
-	@media screen and (max-width: $breakpoint){
+	@media screen and (max-width: $breakpoint) {
 		position: absolute;
 		top: 20px;
 		right: 0;
@@ -101,13 +101,13 @@ hr{
 		//text-align: right;
 	}
 }
-.show{
+.show {
 	opacity: 1;
 	background-color: $header-background;
 }
 
 /**********************Header**********************/
-.header{
+.header {
 	position: relative;
 	@include linearGradient($header-background, rgba($header-background, 0.4));
 	text-align: center;
@@ -115,47 +115,47 @@ hr{
 }
 
 /**********************About**********************/
-#about{
+#about {
 	background-color: $section-background;
-	a{
+	a {
 		color: $header-background;
 		text-decoration: underline;
-		&:hover{
+		&:hover {
 			color: $text-colour;
 		}
 	}
 }
-#about-header{
+#about-header {
 	color: $header-background;
 }
 
 
 /**********************Skills**********************/
-.skills-icons{
+.skills-icons {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.skill{
+.skill {
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 
 /**********************Projects**********************/
-#projects{
+#projects {
 	background-color: $section-background;
 }
-.projects{
+.projects {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	color: $lighter-text;
 }
-#projects-header{
+#projects-header {
 	color: $header-background;
 }
-.project{
+.project {
 	display: flex;
 	flex-direction: column;
 	width: 30%;
@@ -163,50 +163,50 @@ hr{
 	margin-bottom: 10px;
 	border: 1px solid $header-background;
 	box-shadow: 5px 5px 5px #aaaaaa;
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: 600px) {
 		width: 90%
 	}
 }
-.thumbnail{
+.thumbnail {
 	width: 100%;
 }
-.button{
+.button {
 	position: relative;
 	margin: 5px;
 	border: 2px solid $header-background;
 	color: black;
 	padding: 2px 5px 2px 5px;
-	&:hover{
+	&:hover {
 		border-color: $header-background;
 		color: $header-background;
 	}
-	&:active{
+	&:active {
 		top: 2px;
 		left: 2px;
 	}
 }
-.title{
+.title {
 	font-weight: bold;
 	color: $header-background;
 }
-.tools{
+.tools {
 	font-family: 'Space Mono', sans-serif;
 	color: lighten($text-colour, 50%);
 	font-size: $small;
 }
-.links{
+.links {
 	margin-top: 10px;
 }
 
 /**********************Contact**********************/
-.contact{
+.contact {
 	@include linearGradient(rgba($header-background, 0.4), $header-background);
 	text-align: center;
-	a{
+	a {
 		color: $text-colour;
 	}
 }
-.contact-icon{
+.contact-icon {
 	padding-left: 5px;
 	padding-right: 5px;
 }
