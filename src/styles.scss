@@ -74,6 +74,9 @@ hr {
 	height: 30px;
 	border: 1px solid $header-background;
 }
+#avatar-img {
+	height: 30px;
+}
 .nav-icon {
 	color: black;
 	cursor: pointer;
@@ -145,6 +148,13 @@ hr {
 /**********************Projects**********************/
 #projects {
 	background-color: $section-background;
+	a {
+		color: $header-background;
+		text-decoration: underline;
+		&:hover {
+			color: $text-colour;
+		}
+	}
 }
 .projects {
 	display: flex;
@@ -158,13 +168,16 @@ hr {
 .project {
 	display: flex;
 	flex-direction: column;
-	width: 30%;
+	width: 40%;
 	margin: 5px;
 	margin-bottom: 10px;
 	border: 1px solid $header-background;
 	box-shadow: 5px 5px 5px #aaaaaa;
 	@media screen and (max-width: 600px) {
 		width: 90%
+	}
+	@media screen and (min-width: 1400px) {
+		width: 20%
 	}
 }
 .thumbnail {
