@@ -1,0 +1,28 @@
+//font-family: 'Merienda', cursive;
+
+header {
+  background-image: url("imgs/background.jpg");
+  background-size: cover;
+  height: 50vh; //temporarily
+}
+
+nav {
+  background-color: white;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.75) 75%, rgba(255,255,255,0) 100%);
+  padding: 1em 2em; //might need to move this to globals/do a container or use a width
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  list-style-type: none;
+  padding-right: 1.5em;
+  font-weight: bold;
+}
+
+.nav__link a {
+  color: $blue;
+  text-decoration: none;
+}

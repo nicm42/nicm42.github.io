@@ -1,0 +1,2 @@
+html{font-size:100%;box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{font-family:Khula,sans-serif}body,li,ul{margin:0;padding:0}header{background-image:url(imgs/background.jpg);background-size:cover;height:50vh}nav{background-color:#fff;background:linear-gradient(90deg,#fff,hsla(0,0%,100%,.75) 75%,hsla(0,0%,100%,0));padding:1em 2em}.nav__links{display:flex}.nav__link{list-style-type:none;padding-right:1.5em;font-weight:700}.nav__link a{color:#101c65;text-decoration:none}
+/*# sourceMappingURL=styles.css.map */
