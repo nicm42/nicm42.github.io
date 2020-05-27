@@ -1,0 +1,31 @@
+.projects__title {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $red;
+  text-align: center;
+}
+
+.projects__header {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.projects__languages {
+  text-align: center;
+}
+
+.projects__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.projects__button {
+  padding: 1.5em 2em;
+  border: none;
+  background: $blue;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
