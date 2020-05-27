@@ -12,10 +12,10 @@ body {
   padding: 0;
   font-family: 'Khula', sans-serif;
   font-size: 100%;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
-ul, li, h1, h2 {
+ul, li, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -23,4 +23,9 @@ ul, li, h1, h2 {
 .container {
   padding-left: 2em;
   padding-right: 2em;
+}
+
+//We'll change the hover and visited colours/effects later
+a, a:hover, a:visited {
+  color: red;
 }
