@@ -1,5 +1,5 @@
 #about a {
-  color: red;
+  color: $primary-colour;
 }
 
 .about__title {
@@ -7,7 +7,7 @@
   margin-bottom: .5em;
   font-size: 1.5rem;
   font-weight: 700;
-  color: $red;
+  color: $primary-colour;
   text-align: center;
 }
 
@@ -17,4 +17,18 @@
 
 .about__image {
   height: 1rem;
+}
+
+.about__content {
+  @include breakpoint-up(medium){
+    display: flex;
+  }
+}
+
+.about__paragraphs {
+  max-width: 60ch;
+
+  @include breakpoint-up(medium){
+    margin-right: 2em;
+  }
 }

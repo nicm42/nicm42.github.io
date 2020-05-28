@@ -1,5 +1,5 @@
 #contact {
-  background-color: black;
+  background-color: $background-colour;
   background-image: url("imgs/background.jpg");
   background-size: cover;
   background-position: -6em bottom; /* Fix this position */
@@ -11,7 +11,7 @@
 .contact__title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: $red;
+  color: $primary-colour;
 }
 
 .contact__icon {
@@ -21,5 +21,4 @@
 .contact__icons a,
 .contact__attribute {
   color: white;
-  text-decoration: none;
 }

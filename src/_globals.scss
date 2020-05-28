@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -25,8 +26,10 @@ img {
 }
 
 .container {
-  padding-left: 2em;
-  padding-right: 2em;
+  //padding-left: 2em;
+  //padding-right: 2em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 //We'll change the hover and visited colours/effects later
