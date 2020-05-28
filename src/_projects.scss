@@ -1,14 +1,48 @@
+.project a {
+  color: $primary-colour;
+}
+
 .projects__title {
   margin-top: .5em;
   margin-bottom: .5em;
   font-size: 1.5rem;
   font-weight: 700;
-  color: $red;
+  color: $primary-colour;
   text-align: center;
 }
 
 .project {
   padding-bottom: 2em;
+
+  @include breakpoint-up(medium){
+    display: flex;
+  }
+
+}
+
+.project:nth-of-type(2n) .projects__image {
+  @include breakpoint-up(medium){
+    order: 1;
+  }
+}
+
+.projects__image,
+.projects__text {
+  @include breakpoint-up(medium){
+    width: 50%;
+  }
+}
+
+.projects__image img {
+  @include breakpoint-up(medium){
+    height: 50%;
+  }
+}
+
+.projects__image {
+  @include breakpoint-up(medium){
+    text-align: center;
+  }
 }
 
 .projects__header {
@@ -25,8 +59,12 @@
 
 .projects__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: .5em;
+}
+
+.projects__button:last-of-type {
+  margin-left: 2em;
 }
 
 .projects__buttons a {
@@ -37,7 +75,8 @@
 .projects__button {
   padding: 1.5em 2em;
   border: none;
-  background: $blue;
+  border-radius: .5em;
+  background: $secondary-colour;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
