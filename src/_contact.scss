@@ -1,0 +1,25 @@
+#contact {
+  background-color: black;
+  background-image: url("imgs/background.jpg");
+  background-size: cover;
+  background-position: -6em bottom; /* Fix this position */
+  height: 6em; /* Fix this height */
+  color: white;
+  text-align: right;
+}
+
+.contact__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $red;
+}
+
+.contact__icon {
+  margin-left: .5em;
+}
+
+.contact__icons a,
+.contact__attribute {
+  color: white;
+  text-decoration: none;
+}
