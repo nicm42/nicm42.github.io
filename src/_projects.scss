@@ -7,12 +7,18 @@
   text-align: center;
 }
 
+.project {
+  padding-bottom: 2em;
+}
+
 .projects__header {
   font-size: 1.25rem;
   text-align: center;
+  margin-bottom: .5em;
 }
 
 .projects__languages {
+  margin-top: .5em;
   text-align: center;
   font-weight: 300;
 }
@@ -20,6 +26,7 @@
 .projects__buttons {
   display: flex;
   justify-content: space-around;
+  margin-top: .5em;
 }
 
 .projects__buttons a {
