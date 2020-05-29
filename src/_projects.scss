@@ -1,7 +1,3 @@
-.project a {
-  color: $primary-colour;
-}
-
 .projects__title {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -30,12 +26,6 @@
 .projects__text {
   @include breakpoint-up(medium){
     width: 50%;
-  }
-}
-
-.projects__image img {
-  @include breakpoint-up(medium){
-    height: 50%;
   }
 }
 

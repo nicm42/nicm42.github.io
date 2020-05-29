@@ -1,13 +1,13 @@
 header {
+  padding-bottom: .5em;
   background-image: url("imgs/background.jpg");
   background-size: cover;
-  height: 14em; /* TODO think this need sorting */
+  max-height: 15em;
 }
 
 nav {
   background-color: white;
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.75) 75%, rgba(255,255,255,0) 100%);
-  //padding: 1em 2em; //might need to move this to globals/do a container or use a width
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -22,15 +22,8 @@ nav {
   font-weight: 700;
 }
 
-.nav__link a {
-  color: $secondary-colour;
-  text-decoration: none;
-}
-
 .header__title {
   padding-top: 3em;
-  /* padding-left: 2em;
-  padding-right: 2em; */
   font-family: 'Merienda', cursive;
   line-height: 1.2;
 }
