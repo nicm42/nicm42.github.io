@@ -21,8 +21,12 @@
 }
 
 .contact__icons a,
-.contact__attribute,
-.contact__attribute:hover,
-.contact__attribute:visited {
+.contact__attribute a,
+.contact__attribute a:hover,
+.contact__attribute a:visited {
   color: white;
+}
+
+.contact__attribute {
+  font-size: 0.75rem;
 }
