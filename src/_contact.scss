@@ -1,9 +1,11 @@
 #contact {
+  padding-top: .5em;
+  padding-bottom: .5em;
   background-color: $background-colour;
   background-image: url("imgs/background.jpg");
   background-size: cover;
-  background-position: -6em bottom; /* Fix this position */
-  height: 6em; /* Fix this height */
+  background-position: -6em bottom;
+  max-height: 7em;
   color: white;
   text-align: right;
 }
@@ -19,6 +21,8 @@
 }
 
 .contact__icons a,
-.contact__attribute {
+.contact__attribute,
+.contact__attribute:hover,
+.contact__attribute:visited {
   color: white;
 }
