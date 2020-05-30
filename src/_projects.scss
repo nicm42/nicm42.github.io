@@ -8,7 +8,11 @@
 }
 
 .project {
-  padding-bottom: 2em;
+  padding-bottom: 5em;
+
+  &:last-of-type {
+    padding-bottom: 2em;
+  }
 
   @include breakpoint-up(medium){
     display: flex;
