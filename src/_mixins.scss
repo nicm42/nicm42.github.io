@@ -5,3 +5,14 @@ $breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
     @content;
   }
 }
+
+@mixin link-after($left, $bottom, $height, $width, $bgcolour) {
+  content: '';
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+  height: $height;
+  width: $width;
+  background-color: $bgcolour;  
+  transition: transform 300ms ease-in-out;
+}
