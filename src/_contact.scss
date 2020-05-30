@@ -1,19 +1,11 @@
 #contact {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  @include spacing(padding, $top: 0.5em, $bottom: 0.5em);
   background-color: $background-colour;
   background-image: url("imgs/background.jpg");
   background-size: cover;
   background-position: -6em bottom;
   max-height: 7em;
-  color: white;
-  text-align: right;
-}
-
-.contact__title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $primary-colour;
+  @include text($colour: white, $align: right);
 }
 
 .contact__icon {
@@ -23,16 +15,16 @@
 .contact__icons a,
 .contact__attribute a,
 .contact__attribute a:visited {
-  color: $secondary-link-colour;
+  @include text($colour: $secondary-link-colour);
   transition: color 300ms ease-in-out;
 }
 
 .contact__icons a:hover {
-  color: $primary-colour;
+  @include text($colour: $primary-colour);
 }
 
 .contact__attribute {
-  font-size: 0.75rem;
+  @include text($size: 0.75rem);
 }
 
 .contact__attribute a {

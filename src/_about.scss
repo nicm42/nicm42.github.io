@@ -1,14 +1,10 @@
 .about__title {
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $primary-colour;
-  text-align: center;
+  @include spacing(margin, $top: 0.5em, $bottom: 0.5em);
+  @include text($align: center);
 }
 
 .about__text {
-  margin-bottom: .75em;
+  @include spacing(margin, $bottom: 0.75em);
 }
 
 .about__image {
@@ -22,7 +18,6 @@
   }
 
   @include breakpoint-up(large){
-    display: flex;
     justify-content: center;
   }
 }
@@ -31,7 +26,7 @@
   max-width: 60ch;
 
   @include breakpoint-up(medium){
-    margin-right: 2em;
+    @include spacing(margin, $right: 2em);
   }
 }
 
@@ -41,10 +36,10 @@
 
   &::after {
     @include link-after(-10%, 4px, 2px, 105%, $primary-colour);
-    transform: skew(-24deg) rotate(-.5deg) scale(0);
+    transform: skew(-24deg) rotate(-0.5deg) scale(0);
   }
 
   &:hover::after {
-    transform: skew(-24deg) rotate(-.5deg) scale(1);
+    transform: skew(-24deg) rotate(-0.5deg) scale(1);
   }
 }
