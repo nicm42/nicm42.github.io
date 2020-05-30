@@ -67,7 +67,7 @@
 
 .projects__button {
   position: relative;
-  padding: 1em 1.5em;
+  @include spacing(padding, $top: 1em, $right: 1.5em, $bottom: 1em, $left: 1.5em);
   border: 2px solid $secondary-colour;
   background: white;
   @include text($size: 0.75rem, $weight: 600, $colour: $secondary-colour, $transform: uppercase);
