@@ -34,9 +34,7 @@
 }
 
 .projects__image {
-  @include breakpoint-up(medium){
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .projects__header {
