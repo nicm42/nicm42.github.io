@@ -26,13 +26,11 @@
 .projects__image,
 .projects__text {
 
+  @include text($align: center);
+
   @include breakpoint-up(medium){
     width: 50%;
   }
-}
-
-.projects__image {
-  @include text($align: center);
 }
 
 .projects__header {
