@@ -22,11 +22,37 @@
 
 .contact__icons a,
 .contact__attribute a,
-.contact__attribute a:hover,
 .contact__attribute a:visited {
-  color: white;
+  color: $secondary-link-colour;
+  transition: color 200ms ease-in-out;
+}
+
+.contact__icons a:hover {
+  color: $primary-colour;
 }
 
 .contact__attribute {
   font-size: 0.75rem;
+}
+
+.contact__attribute a {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -5%;
+    bottom: 4px;
+    height: 2px;
+    width: 110%;
+    background-color: $primary-colour;
+    transform: skew(-24deg) scaleX(0) rotate(-.5deg);
+    transform-origin: right;
+    transition: transform 200ms ease-in;  
+  }
+
+  &:hover::after {
+    transform: skew(-24deg) scaleX(1) rotate(-.5deg);
+    transform-origin: left;
+  } 
 }
