@@ -30,12 +30,14 @@ nav {
     height: 3px;
     width: 100%;
     background-color: $primary-colour;
-    transform: skew(-45deg) scaleX(0);
+    transform: skew(-45deg) scaleX(0) rotate(-2deg);
+    transform-origin: right;
     transition: transform 200ms ease-in;
   }
 
   &:hover::after {
-    transform: skew(-45deg) scaleX(1);
+    transform: skew(-45deg) scaleX(1) rotate(-2deg);
+    transform-origin: left;
   }
 }
 
