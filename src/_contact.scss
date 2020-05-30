@@ -1,0 +1,41 @@
+#contact {
+  @include spacing(padding, $top: 0.5em, $bottom: 0.5em);
+  background-color: $background-colour;
+  background-image: url("imgs/background.jpg");
+  background-size: cover;
+  background-position: -6em bottom;
+  max-height: 7em;
+  @include text($colour: white, $align: right);
+}
+
+.contact__icon {
+  margin-left: .5em;
+}
+
+.contact__icons a,
+.contact__attribute a,
+.contact__attribute a:visited {
+  @include text($colour: $secondary-link-colour);
+  transition: color 300ms ease-in-out;
+}
+
+.contact__icons a:hover {
+  @include text($colour: $primary-colour);
+}
+
+.contact__attribute {
+  @include text($size: 0.75rem);
+}
+
+.contact__attribute a {
+  position: relative;
+
+  &::after {
+    @include link-after(-5%, 4px, 2px, 110%, $primary-colour);
+    transform: skew(-24deg) rotate(-.5deg) scale(0);
+  }
+
+  &:hover::after {
+    transform: skew(-24deg) rotate(-.5deg) scale(1);
+  } 
+}

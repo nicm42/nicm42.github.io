@@ -2,95 +2,167 @@
 <html lang="en">
 <head>
 	<title>Nic</title>
-    <meta charset="utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Khula|Space+Mono&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Merienda:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
-	<nav class="navigation">
-		<div id="avatar"><img src="./imgs/nic100.jpg" alt="nic" id="avatar-img"></div>
-		<span class="nav-icon"><i class="fas fa-bars"></i></span>
-		<div id="links">
-			<a href="#about" id="about-menu" class="nav-link">About</a>
-			<a href="#skills" id="skills-menu" class="nav-link">Skills</a>
-			<a href="#projects" id="projects-menu" class="nav-link">Projects</a>
-			<a href="#contact" id="contact-menu" class="nav-link">Contact</a>
-		</div>
-	</nav>
+  <header>
+    <nav>
+      <ul class="nav__links container">
+        <li class="nav__link"><a href="#about">About</a></li>
+        <li class="nav__link"><a href="#projects">Projects</a></li>
+        <li class="nav__link"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__title container">
+      <h1>Nic</h1>
+      <h2>Web developer</h2>
+    </div>
+  </header>
 
-	<header class="header" id="header">
-		<div class="name"><h1>Nic</h1></div>
-	</header>
-	<main>
-		<section id="about" class="about">
-			<h2 id="about-header" class="header-text">About</h2>
-			I'm a front end developer in South Oxfordshire. <br>
-			I currently work for MMR Research programming online surveys, creating data collection tools using jQuery and working on survey layouts. <br>
-			I like the combination of problem solving and prettifying things. <br>
-			I also like red. <br>
-			<span class="work-icon"><a href="https://github.com/nicm42/" title="View my work on Github"><i class="fab fa-github"></i> View my work on GitHub</a></span><br>
-		</section>
-		<hr>
-		<section class="skills" id="skills">
-			<h2 id="skills-header" class="header-text">Skills</h2>
-			<div class="skills-icons">
-				<div class="skill"><img src="./imgs/icons8-html-5-50.png" alt="HTML5" title="HTML5"><br>HTML5</div>
-				<div class="skill"><img src="./imgs/icons8-css3-50.png" alt="CSS3" title="CSS3"><br>CSS3</div>
-				<div class="skill"><img src="./imgs/less.png" alt="LESS" title="LESS"><br>LESS</div>
-				<div class="skill"><img src="./imgs/sass.png" alt="SASS" title="SASS"><br>SASS</div>
-				<div class="skill"><img src="./imgs/icons8-bootstrap-48.png" alt="Bootstrap" title="Bootstrap"><br>Bootstrap</div>
-				<div class="skill"><span class="iconify" data-icon="logos-tailwindcss-icon" data-inline="false" data-height="50px" title="Tailwind CSS"></span><br>Tailwind CSS</div>
-				<div class="skill"><img src="./imgs/icons8-javascript-50.png" alt="JavaScript" title="JavaScript"><br>JavaScript</div>
-				<div class="skill"><img src="./imgs/icons8-jquery-50.png" alt="jQuery" title="jQuery"><br>jQuery</div>
-				<div class="skill"><img src="./imgs/icons8-git-48.png" alt="Git" title="Git"><br>Git</div>
-				<div class="skill"><img src="./imgs/icons8-gulp-50.png" alt="Gulp" title="Gulp"><br>Gulp</div>
-				<!--<div class="skill"><img src="./imgs/icons8-react-native-50.png" alt="React" title="React"><br>React</div>-->
-			</div>
-		</section>
-		<hr>
-		<section id="projects">
-			<h2 id="projects-header" class="header-text">Projects</h2>
-			<div class="projects" id="pages">
-				<article class="project"><figure><img class="thumbnail" src="./imgs/manage-landing-page.jpg" alt="Manage Landing Page"><br><figcaption class="title">Manage Landing Page</figcaption><div class="description">Landing Page for a company called Manage. Images and instructions were provided by <a href="https://www.frontendmentor.io/">Frontend Mentor</a>.</div><div class="tools">HTML SCSS JavaScript</div><div class="links"><a href="https://manage-landing-page-nicm42.now.sh/" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/Manage-Landing-Page" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>
+  <main>
+    <section id="about" class="container">
+      <h3 class="about__title">About</h3>
+      <div class="about__content">
+        <div class="about__paragraphs">
+          <p class="about__text">
+            I'm a developer in South Oxfordshire. I currently program online surveys, create data collection tools using HTML, CSS
+            and jQuery and work on survey layout using CSS and JavaScript. I enjoy the combination of problem solving and
+            making things pretty.
+          </p>
+          <p class="about__text">I also like red.</p>
+        </div>
+        <div class="about__links">
+          <p class="about__link"><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/nicm42/" title="GitHub">View my work on GitHub</a></p>
+          <p class="about__link"><img class="about__image" src="imgs/codewars.svg" alt="Codewars logo"> <a target="_blank" href="https://www.codewars.com/users/nicm42" title="Codewars">Codewars profile</a></p>
+        </div>
+      </div>
+    </section>
 
-				<article class="project"><figure><img class="thumbnail" src="./imgs/spaceshipstore.jpg" alt="The Spaceship Store"><br><figcaption class="title">The Spaceship Store</figcaption><div class="description">Landing page for The Spaceship Store using Boostrap components.</div><div class="tools">HTML SCSS Bootstrap</div><div class="links"><a href="https://spaceshipstore.netlify.com/" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/spaceship-store" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>
+    <section class="skills">
+      <span class="skills__icon"><img src="./imgs/icons8-html-5-50.png" alt="HTML5" title="HTML5"></span>
+      <span class="skills__icon"><img src="./imgs/icons8-css3-50.png" alt="CSS3" title="CSS3"></span>
+      <span class="skills__icon"><img src="./imgs/less.png" alt="LESS" title="LESS"></span>
+      <span class="skills__icon"><img src="./imgs/sass.png" alt="SASS" title="SASS"></span>
+      <span class="skills__icon"><img src="./imgs/icons8-bootstrap-48.png" alt="Bootstrap" title="Bootstrap"></span>
+      <span class="skills__icon"><span class="iconify" data-icon="logos-tailwindcss-icon" data-inline="false" data-height="50px" title="Tailwind CSS"></span></span>
+      <span class="skills__icon"><img src="./imgs/icons8-javascript-50.png" alt="JavaScript" title="JavaScript"></span>
+      <span class="skills__icon"><img src="./imgs/icons8-jquery-50.png" alt="jQuery" title="jQuery"></span>
+      <span class="skills__icon"><img src="./imgs/icons8-git-48.png" alt="Git" title="Git"></span>
+      <span class="skills__icon"><img src="./imgs/icons8-gulp-50.png" alt="Gulp" title="Gulp"></span>
+    </section>
 
-				<!--<article class="project"><figure><img class="thumbnail" src="./imgs/grandslams.jpg" alt="Grand Slams Countdown"><br><figcaption class="title">Grand Slams Countdown</figcaption><div class="description">A page that tells you when the Grand Slams are this year with a countdown.</div><div class="tools">HTML SCSS</div><div class="links"><a href="https://grand-slams.netlify.com/" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/grand-slams" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>-->
+    <section id="projects" class="container">
+      <h3 class="projects__title">Projects</h3>
 
-				<article class="project"><figure><img class="thumbnail" src="./imgs/readingwednesday.jpg" alt="Reading Wednesday Template Generator"><br><figcaption class="title">Reading Wednesday Template Generator</figcaption><div class="description">A page to generate a blog post for Reading Wednesday, using Goodreads api.</div><div class="tools">HTML SCSS JavaScript</div><div class="links"><a href="https://reading-wednesday.netlify.com/" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/reading-wednesday" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>
+      <div class="project">
+        <div class="projects__image"><img src="imgs/fourcard.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Four Card Feature Section</h4>
+          <p class="projects__about">Using CSS Grid to position the cards. Images and design were provided by <a href="https://www.frontendmentor.io/">Frontend Mentor</a></p>
+          <p class="projects__languages">HTML SCSS</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://four-card-feature-nm.netlify.app/">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/four-card-feature-section">View code</a>
+          </div>
+        </div>
+      </div>
 
-				<!--<article class="project"><figure><img class="thumbnail" src="./imgs/starfleet.jpg" alt="Starfleet Recruitment"><br><figcaption class="title">Starfleet Recruitment</figcaption><div class="description">A page using a hero image and a carousel.</div><div class="tools">HTML LESS JavaScript</div><div class="links"><a href="https://starfleet-recruitment.netlify.com/starfleetrecruitment.html" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/starfleet-recruitment" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>
+      <div class="project">
+        <div class="projects__image"><img src="imgs/pricegrid.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Price Grid Component</h4>
+          <p class="projects__about">Using Tailwind CSS. Images and design were provided by <a href="https://www.frontendmentor.io/">Frontend Mentor</a></p>
+          <p class="projects__languages">HTML Tailwind CSS</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://single-price-grid-component-gmt8qrglw.now.sh/">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/single-price-grid-component">View code</a>
+          </div>
+        </div>
+      </div>
 
-				<article class="project"><figure><img class="thumbnail" src="./imgs/tribute.jpg" alt="ISIHAC tribute thumbnail"><br><figcaption class="title">I'm Sorry I Haven't a Clue Tribute</figcaption><div class="description">A page using Flexbox and CSS Grid.</div><div class="tools">HTML CSS</div><div class="links"><a href="https://isihac-tribute.netlify.com/tribute.html" target="_blank" class="button"><i class="far fa-eye"></i>&nbsp;View</a><a href="https://github.com/nicm42/tribute" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>-->
-			</div>
+      <div class="project">
+        <div class="projects__image"><img src="imgs/spaceshipstore.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Spaceship Store</h4>
+          <p class="projects__about">Landing page for a Spaceship Store using Bootstrap.</p>
+          <p class="projects__languages">HTML SCSS Bootstrap</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://spaceshipstore.netlify.com/">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/spaceship-store">View code</a>
+          </div>
+        </div>
+      </div>
 
-			<div class="projects" id="games">
-				<article class="project"><figure><img class="thumbnail" src="./imgs/redbutton.jpg" alt="Red Button thumbnail"><br><figcaption class="title">Red Button</figcaption><div class="description">A game inspired by the Hitchhiker's Guide to the Galaxy. Something happens if you press the red button...</div><div class="tools">HTML CSS React</div><div class="links"><a href="https://red-button.netlify.com/" target="_blank" target="_blank" target="_blank" class="button"><i class="fas fa-gamepad"></i>&nbsp;Play</a><a href="https://github.com/nicm42/red-button" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>
-					
-				<article class="project"><figure><img class="thumbnail" src="./imgs/clicktheshape.jpg" alt="Click the Shape thumbnail"><br><figcaption class="title">Click the Dot</figcaption><div class="description">A quick game where you aim to click the shape (circle, square or triangle) when it's twice the size. Harder than it looks!</div><div class="tools">HTML SCSS jQuery</div><div class="links"><a href="https://click-the-shape.netlify.com" target="_blank" class="button"><i class="fas fa-gamepad"></i>&nbsp;Play</a><a href="https://github.com/nicm42/clickthedot" target="_blank" target="_blank" class="button"><i class="fas fa-code"></i>&nbsp;Code</a></div></figure></article>			
+      <div class="project">
+        <div class="projects__image"><img src="imgs/manage.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Manage Landing Page</h4>
+          <p class="projects__about">Landing page for a company called Manage. Images and design were provided by <a href="https://www.frontendmentor.io/">Frontend Mentor</a></p>
+          <p class="projects__languages">HTML SCSS JavaScript</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://manage-landing-page-nicm42.now.sh/">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/Manage-Landing-Page">View code</a>
+          </div>
+        </div>
+      </div>
 
-			</div>
-		</section>
-			<section class="contact" id="contact" class="header-text">
-				<h2>Contact</h2>
-				<div class="icons">
-					<span class="contact-icon"><a href="https://twitter.com/nicm4242" title="Twitter"><i class="fab fa-twitter"></i></a></span>
-					<span class="contact-icon"><a href="https://www.linkedin.com/in/nicmayer42/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></span>
-					<span class="contact-icon"><script type="text/javascript">
-					  emailE = 'gmail.com'
-					  emailE = ('nicmayer42' + '@' + emailE)
-					  document.write('<a href="mailto:' + emailE + '" title="Email">' + '<i class="fas fa-envelope"></i>' + '</a>')
-					</script>
-					<noscript>
-					  Email address protected by JavaScript
-					</noscript></span>
-				</div>
-				<a target="_blank" href="https://icons8.com/icons/">Icons</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
-			</section>
-	</main>
-	<script src="script.js"></script>
+      <div class="project">
+        <div class="projects__image"><img src="imgs/fireworks.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Fireworks</h4>
+          <p class="projects__about">These fireworks were created with HTML5 Canvas and were inspired by the 2019 Royal Institution Christmas lectures</p>
+          <p class="projects__languages">HTML JavaScript</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://riclfireworks.netlify.com/riclfireworks.html">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/fireworks">View code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="projects__image"><img src="imgs/clicktheshape.jpg" alt="Screenshot"></div>
+        <div class="projects__text">
+          <h4 class="projects__header">Click the Shape</h4>
+          <p class="projects__about">A quick game where you aim to click the shape (circle, square or triangle) when it's twice the size. Harder than it
+          looks!</p>
+          <p class="projects__languages">HTML SCSS jQuery</p>
+          <div class="projects__buttons">
+            <a class="projects__button" target="_blank" href="https://click-the-shape.netlify.com/">View site</a>
+            <a class="projects__button" target="_blank" href="https://github.com/nicm42/clickthedot">View code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact__content container">
+        <h3 class="contact__title">Contact</h3>
+        <div class="contact__icons">
+          <span class="contact__icon"><a target="_blank" href="https://twitter.com/nicm4242" title="Twitter"><i class="fab fa-twitter"></i></a></span>
+          <span class="contact__icon"><a target="_blank" href="https://www.linkedin.com/in/nicmayer42/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></span>
+          <span class="contact__icon">
+            <script type="text/javascript">
+              emailE = 'gmail.com'
+              emailE = ('nicmayer42' + '@' + emailE)
+              document.write('<a href="mailto:' + emailE + '" title="Email">' + '<i class="fas fa-envelope"></i>' + '</a>')
+            </script>
+            <noscript>
+              Email address protected by JavaScript
+            </noscript></span>
+        </div>
+        <div class="contact__attribute">
+          <a target="_blank" href="https://icons8.com/icons/">Icons</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
 </body>
 </html>

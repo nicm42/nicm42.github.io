@@ -1,5 +1,7 @@
 [Dolphin]
-Timestamp=2019,8,8,21,2,27
+SortOrder=1
+SortRole=date
+Timestamp=2020,5,27,17,0,23
 Version=3
 ViewMode=1
 VisibleRoles=Details_text,Details_size,Details_date,Details_imageSize,CustomizedDetails

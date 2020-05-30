@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  font-family: 'Khula', sans-serif;
+  @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
+}
+
+ul, li, h1, h2, h3, h4, p {
+  @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
+}
+
+h3 {
+  @include text($size: 1.5rem, $weight: 700, $colour: $primary-colour);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a, a:hover, a:visited {
+  @include text($colour: $secondary-colour);
+  text-decoration: none;
+}

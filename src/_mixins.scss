@@ -1,0 +1,82 @@
+$breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin text($size: null, $weight: null, $line-height: null, $colour: null, $align: null, $transform: null) {
+  @if $size != null {
+    font-size: $size;
+  }
+
+  @if $weight != null {
+    font-weight: $weight;
+  }
+
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+
+  @if $colour != null {
+    color: $colour;
+  }
+
+  @if $align != null {
+    text-align: $align;
+  }
+
+  @if $transform != null {
+    text-transform: $transform;
+  }
+}
+
+@mixin spacing($type, $top: null, $right: null, $bottom: null, $left: null) {
+  @if $top != null {
+    @if $type == padding {
+      padding-top: $top;
+    }
+    @if $type == margin {
+      margin-top: $top;
+    }
+  }
+
+  @if $right != null {
+    @if $type == padding {
+      padding-right: $right;
+    }
+    @if $type == margin {
+      margin-right: $right;
+    }
+  }
+
+  @if $bottom != null {
+    @if $type == padding {
+      padding-bottom: $bottom;
+    }
+    @if $type == margin {
+      margin-bottom: $bottom;
+    }
+  }
+  
+  @if $left != null {
+    @if $type == padding {
+      padding-left: $left;
+    }
+    @if $type == margin {
+      margin-left: $left;
+    }
+  }  
+}
+
+@mixin link-after($left, $bottom, $height, $width, $bgcolour) {
+  content: '';
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+  height: $height;
+  width: $width;
+  background-color: $bgcolour;  
+  transition: transform 300ms ease-in-out;
+}

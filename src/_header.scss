@@ -1,0 +1,46 @@
+header {
+  @include spacing(padding, $bottom: 0.5em);
+  background-image: url("imgs/background.jpg");
+  background-size: cover;
+  max-height: 15em;
+}
+
+nav {
+  @include spacing(padding, $top: 1em, $bottom: 1em);
+  background-color: white;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.75) 75%, rgba(255,255,255,0) 100%);
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  position: relative;
+  @include spacing(margin, $right: 1.5em);
+  list-style-type: none;
+  @include text($weight: 700);
+
+  &::after {
+    @include link-after(-5%, 3px, 3px, 110%, $primary-colour);
+    transform: skew(-45deg) rotate(-2deg) scale(0);
+  }
+
+  &:hover::after {
+    transform: skew(-45deg) rotate(-2deg) scale(1);
+  }
+}
+
+.header__title {
+  @include spacing(padding, $top: 3em);
+  font-family: 'Merienda', cursive;
+  @include text($line-height: 1.2);
+}
+
+h1 {
+  @include text($size: 4rem, $weight: 400, $colour: $primary-colour);
+}
+
+h2 {
+  @include text($size: 2rem, $weight: 400, $colour: white);
+}
