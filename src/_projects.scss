@@ -45,6 +45,29 @@
   margin-bottom: .5em;
 }
 
+.projects__about a {
+  position: relative;
+  white-space: nowrap; //because otherwise the after looks terrible
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 2px;
+    width: 100%;
+    background-color: $primary-colour;
+    transform: skew(-24deg) scaleX(0) rotate(-.5deg);
+    transform-origin: right;
+    transition: transform 200ms ease-in;  
+  }
+
+  &:hover::after {
+    transform: skew(-24deg) scaleX(1) rotate(-.5deg);
+    transform-origin: left;
+  }
+}
+
 .projects__languages {
   margin-top: .5em;
   text-align: center;
