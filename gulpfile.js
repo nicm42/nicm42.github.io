@@ -61,8 +61,7 @@ function watchTask() {
     });
     watch([files.scssPath, files.jsPath],
         series(
-            parallel(scssTask, jsTask),
-            //cacheBustTask
+            parallel(scssTask),
         )
     ).on('change', browserSync.reload);
     watch(files.htmlPath).on('change', browserSync.reload);    
@@ -72,8 +71,7 @@ function watchTask() {
 // Runs the scss and js tasks simultaneously
 // then runs cacheBust, then watch task
 exports.default = series(
-    parallel(scssTask, jsTask), 
-    //cacheBustTask,
+    parallel(scssTask), 
     watchTask
 );
 
