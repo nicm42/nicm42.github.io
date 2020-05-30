@@ -1,17 +1,13 @@
 .projects__title {
-  margin-top: .5em;
-  margin-bottom: .5em;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $primary-colour;
-  text-align: center;
+  @include spacing(margin, $top: 0.5em, $bottom: 0.5em);
+  @include text($align: center);
 }
 
 .project {
-  padding-bottom: 5em;
+  @include spacing(padding, $bottom: 5em);
 
   &:last-of-type {
-    padding-bottom: 2em;
+    @include spacing(padding, $bottom: 2em);
   }
 
   @include breakpoint-up(medium){
@@ -21,6 +17,7 @@
 }
 
 .project:nth-of-type(2n) .projects__image {
+
   @include breakpoint-up(medium){
     order: 1;
   }
@@ -28,19 +25,19 @@
 
 .projects__image,
 .projects__text {
+
   @include breakpoint-up(medium){
     width: 50%;
   }
 }
 
 .projects__image {
-  text-align: center;
+  @include text($align: center);
 }
 
 .projects__header {
-  font-size: 1.25rem;
-  text-align: center;
-  margin-bottom: .5em;
+  @include spacing(bottom, $bottom: 0.5em);
+  @include text($size: 1.25rem, $align: center);
 }
 
 .projects__about a {
@@ -58,15 +55,14 @@
 }
 
 .projects__languages {
-  margin-top: .5em;
-  text-align: center;
-  font-weight: 300;
+  @include spacing(margin, $top: 0.5em);
+  @include text($weight: 300, $align: center);
 }
 
 .projects__buttons {
   display: flex;
   justify-content: center;
-  margin-top: .5em;
+  @include spacing(margin, $top: 0.5em);
 }
 
 .projects__button {
@@ -74,16 +70,14 @@
   padding: 1em 1.5em;
   border: 2px solid $secondary-colour;
   background: white;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: $secondary-colour;
+  @include text($size: 0.75rem, $weight: 600, $colour: $secondary-colour, $transform: uppercase);
   cursor: pointer;
   z-index: 1;
   transition: color 300ms ease-in-out;
 
-  &:last-of-type {
+  &:not(:last-of-type) {
     margin-left: 2em;
+    @include spacing(margin, $right: 2em);
   }
 
   &::after {
@@ -99,7 +93,7 @@
   }
 
   &:hover {
-    color: white;
+    @include text($colour: white);
   }
 
   &:active {

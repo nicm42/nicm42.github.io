@@ -1,15 +1,14 @@
 header {
-  padding-bottom: .5em;
+  @include spacing(padding, $bottom: 0.5em);
   background-image: url("imgs/background.jpg");
   background-size: cover;
   max-height: 15em;
 }
 
 nav {
+  @include spacing(padding, $top: 1em, $bottom: 1em);
   background-color: white;
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.75) 75%, rgba(255,255,255,0) 100%);
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .nav__links {
@@ -18,9 +17,9 @@ nav {
 
 .nav__link {
   position: relative;
+  @include spacing(margin, $right: 1.5em);
   list-style-type: none;
-  margin-right: 1.5em;
-  font-weight: 700;
+  @include text($weight: 700);
 
   &::after {
     @include link-after(-5%, 3px, 3px, 110%, $primary-colour);
@@ -33,19 +32,15 @@ nav {
 }
 
 .header__title {
-  padding-top: 3em;
+  @include spacing(padding, $top: 3em);
   font-family: 'Merienda', cursive;
-  line-height: 1.2;
+  @include text($line-height: 1.2);
 }
 
 h1 {
-  color: $primary-colour;
-  font-size: 4rem;
-  font-weight: 400;
+  @include text($size: 4rem, $weight: 400, $colour: $primary-colour);
 }
 
 h2 {
-  color: white;
-  font-size: 2rem;
-  font-weight: 400;
+  @include text($size: 2rem, $weight: 400, $colour: white);
 }

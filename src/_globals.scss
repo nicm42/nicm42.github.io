@@ -1,5 +1,4 @@
 html {
-  font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -9,16 +8,19 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
   font-family: 'Khula', sans-serif;
-  font-size: 100%;
-  line-height: 1.6;
+  @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
 }
 
 ul, li, h1, h2, h3, h4, p {
-  margin: 0;
-  padding: 0;
+  @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
+  @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
+}
+
+h3 {
+  @include text($size: 1.5rem, $weight: 700, $colour: $primary-colour);
 }
 
 img {
@@ -31,6 +33,6 @@ img {
 }
 
 a, a:hover, a:visited {
-  color: $secondary-colour;
+  @include text($colour: $secondary-colour);
   text-decoration: none;
 }
