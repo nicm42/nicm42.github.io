@@ -34,3 +34,25 @@
     margin-right: 2em;
   }
 }
+
+.about__link a {
+  position: relative;
+
+  &::after {
+     content: '';
+    position: absolute;
+    left: -10%;
+    bottom: 4px;
+    height: 2px;
+    width: 105%;
+    background-color: $primary-colour;
+    transform: skew(-24deg) scaleX(0) rotate(-.5deg);
+    transform-origin: right;
+    transition: transform 200ms ease-in;  
+  }
+
+  &:hover::after {
+    transform: skew(-24deg) scaleX(1) rotate(-.5deg);
+    transform-origin: left;
+  }
+}
