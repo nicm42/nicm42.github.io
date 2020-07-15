@@ -20,13 +20,16 @@ nav {
   @include spacing(margin, $right: 1.5em);
   list-style-type: none;
   @include text($weight: 700);
+}
 
+.nav__link a {
   &::after {
     @include link-after(-5%, 3px, 3px, 110%, $primary-colour);
     transform: skew(-45deg) rotate(-2deg) scale(0);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: skew(-45deg) rotate(-2deg) scale(1);
   }
 }
