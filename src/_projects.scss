@@ -47,7 +47,8 @@
     transform: skew(-24deg) rotate(-.5deg) scale(0);
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: skew(-24deg) rotate(-.5deg) scale(1);
   }
 }
@@ -85,12 +86,14 @@
     transform-origin: top right;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     transform: scale(1);
     transform-origin: bottom left;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @include text($colour: white);
   }
 
