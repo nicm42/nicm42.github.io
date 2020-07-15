@@ -32,7 +32,10 @@ img {
   margin: 0 auto;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:focus,
+a:visited {
   @include text($colour: $secondary-colour);
   text-decoration: none;
 }
