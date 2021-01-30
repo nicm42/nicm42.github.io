@@ -10,25 +10,22 @@
     @include spacing(padding, $bottom: 2em);
   }
 
-  @include breakpoint-up(medium){
+  @include breakpoint-up(medium) {
     display: flex;
   }
-
 }
 
 .project:nth-of-type(2n) .projects__image {
-
-  @include breakpoint-up(medium){
+  @include breakpoint-up(medium) {
     order: 1;
   }
 }
 
 .projects__image,
 .projects__text {
-
   @include text($align: center);
 
-  @include breakpoint-up(medium){
+  @include breakpoint-up(medium) {
     width: 50%;
   }
 }
@@ -42,7 +39,7 @@
   position: relative;
   white-space: nowrap; //because otherwise the after looks terrible
 
-  &::after {
+  /* &::after {
     @include link-after(0, 4px, 2px, 100%, $primary-colour);
     transform: skew(-24deg) rotate(-.5deg) scale(0);
   }
@@ -50,7 +47,7 @@
   &:hover::after,
   &:focus::after {
     transform: skew(-24deg) rotate(-.5deg) scale(1);
-  }
+  } */
 }
 
 .projects__languages {
@@ -64,12 +61,26 @@
   @include spacing(margin, $top: 0.5em);
 }
 
+.projects__buttons a {
+  text-decoration: none;
+}
 .projects__button {
   position: relative;
-  @include spacing(padding, $top: 1em, $right: 1.5em, $bottom: 1em, $left: 1.5em);
+  @include spacing(
+    padding,
+    $top: 1em,
+    $right: 1.5em,
+    $bottom: 0.5em,
+    $left: 1.5em
+  );
   border: 2px solid $secondary-colour;
   background: white;
-  @include text($size: 0.75rem, $weight: 600, $colour: $secondary-colour, $transform: uppercase);
+  @include text(
+    $size: 0.75rem,
+    $weight: 600,
+    $colour: $secondary-colour,
+    $transform: uppercase
+  );
   cursor: pointer;
   z-index: 1;
   transition: color 300ms ease-in-out;

@@ -27,7 +27,7 @@ nav {
   @include text($weight: 700);
 }
 
-.nav__link a {
+/* .nav__link a {
   &::after {
     @include link-after(-5%, 3px, 3px, 110%, $primary-colour);
     transform: skew(-45deg) rotate(-2deg) scale(0);
@@ -37,7 +37,7 @@ nav {
   &:focus::after {
     transform: skew(-45deg) rotate(-2deg) scale(1);
   }
-}
+} */
 
 .header__title {
   @include spacing(padding, $top: 3em);
