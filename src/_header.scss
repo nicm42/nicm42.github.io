@@ -6,7 +6,7 @@ header {
 }
 
 nav {
-  @include spacing(padding, $top: 1em, $bottom: 1em);
+  @include spacing(padding, $top: 1em, $bottom: 0.5em);
   background-color: white;
   background: linear-gradient(
     90deg,

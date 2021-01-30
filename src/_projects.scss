@@ -1,5 +1,5 @@
 .projects__title {
-  @include spacing(margin, $top: 0.5em, $bottom: 0.5em);
+  @include spacing(margin, $top: 2em, $bottom: 0.5em);
   @include text($align: center);
 }
 
