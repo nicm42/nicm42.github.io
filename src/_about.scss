@@ -25,7 +25,7 @@
 }
 
 .about__paragraphs {
-  max-width: 60ch;
+  max-width: $text-width;
 
   /* @include breakpoint-up(small) {
     @include spacing(margin, $right: 2em);
@@ -34,7 +34,7 @@
 
 .about__links {
   @include breakpoint-up(small) {
-    width: 60ch;
+    width: $text-width;
     align-self: flex-start;
   }
 }
