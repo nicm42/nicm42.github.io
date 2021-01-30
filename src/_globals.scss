@@ -3,7 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -14,7 +16,13 @@ body {
   @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
 }
 
-ul, li, h1, h2, h3, h4, p {
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
   @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
 }
@@ -32,10 +40,14 @@ img {
   margin: 0 auto;
 }
 
-a,
+a {
+  @include text($colour: $secondary-colour);
+  text-decoration: none;
+}
+
 a:hover,
 a:focus,
 a:visited {
-  @include text($colour: $secondary-colour);
+  @include text($colour: $secondary-link-colour-darker);
   text-decoration: none;
 }
