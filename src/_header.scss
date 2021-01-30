@@ -25,6 +25,7 @@ nav {
   @include spacing(margin, $right: 1.5em);
   list-style-type: none;
   @include text($weight: 700);
+  /* white-space: nowrap; */
 }
 
 /* .nav__link a {
@@ -53,6 +54,8 @@ h2 {
   @include text($size: 2rem, $weight: 400, $colour: white);
 }
 
-.fa-external-link-alt {
+/* .fa-external-link-alt {
   font-size: 0.75em;
+  color: $secondary-colour;
 }
+ */
