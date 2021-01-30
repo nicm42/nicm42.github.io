@@ -40,14 +40,26 @@ img {
   margin: 0 auto;
 }
 
-a {
-  @include text($colour: $secondary-colour);
-  text-decoration: none;
+a,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration-color: $primary-colour;
+  text-underline-offset: 0.25rem;
 }
 
-a:hover,
 a:focus,
+a:hover {
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.2em;
+}
+
+a {
+  @include text($colour: $secondary-colour);
+}
+
+a:focus,
+a:hover,
 a:visited {
   @include text($colour: $secondary-link-colour-darker);
-  text-decoration: none;
 }
