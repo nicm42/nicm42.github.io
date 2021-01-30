@@ -12,21 +12,30 @@
 }
 
 .about__content {
-
-  @include breakpoint-up(medium){
-    display: flex;
+  @include breakpoint-up(medium) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
   }
 
-  @include breakpoint-up(large){
+  /* @include breakpoint-up(large) {
     justify-content: center;
-  }
+  } */
 }
 
 .about__paragraphs {
   max-width: 60ch;
 
-  @include breakpoint-up(medium){
+  /* @include breakpoint-up(medium) {
     @include spacing(margin, $right: 2em);
+  } */
+}
+
+.about__links {
+  @include breakpoint-up(medium) {
+    width: 60ch;
+    align-self: flex-start;
   }
 }
 
