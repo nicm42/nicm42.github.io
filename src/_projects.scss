@@ -40,6 +40,15 @@
   }
 }
 
+.projects__image {
+  @include text($align: center);
+
+  @include breakpoint-up(medium) {
+    @include text($align: unset);
+    @include spacing(margin, $left: 1em, $right: 1em);
+  }
+}
+
 .projects__header {
   @include spacing(bottom, $bottom: 0.5em);
   @include text($size: 1.25rem, $align: center);
