@@ -25,20 +25,7 @@ nav {
   @include spacing(margin, $right: 1.5em);
   list-style-type: none;
   @include text($weight: 700);
-  /* white-space: nowrap; */
 }
-
-/* .nav__link a {
-  &::after {
-    @include link-after(-5%, 3px, 3px, 110%, $primary-colour);
-    transform: skew(-45deg) rotate(-2deg) scale(0);
-  }
-
-  &:hover::after,
-  &:focus::after {
-    transform: skew(-45deg) rotate(-2deg) scale(1);
-  }
-} */
 
 .header__title {
   @include spacing(padding, $top: 3em);
@@ -53,9 +40,3 @@ h1 {
 h2 {
   @include text($size: 2rem, $weight: 400, $colour: white);
 }
-
-/* .fa-external-link-alt {
-  font-size: 0.75em;
-  color: $secondary-colour;
-}
- */
