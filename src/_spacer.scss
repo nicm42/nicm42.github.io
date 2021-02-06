@@ -1,0 +1,8 @@
+.spacer {
+  background-color: $background-colour;
+  background-image: url('imgs/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1em;
+  @include spacing(margin, $left: auto, $right: auto);
+}
