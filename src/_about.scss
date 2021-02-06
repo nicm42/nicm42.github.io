@@ -12,6 +12,8 @@
 }
 
 .about__content {
+  margin-bottom: 2em;
+
   @include breakpoint-up(small) {
     /* display: grid; */
     /* grid-template-columns: 1fr; */
