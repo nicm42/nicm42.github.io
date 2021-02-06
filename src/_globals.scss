@@ -23,6 +23,7 @@ body {
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
   font-family: 'Khula', sans-serif;
   @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
+  background-color: $section-background-colour;
 }
 
 ul,

@@ -1,3 +1,7 @@
+#about {
+  @include spacing(margin, $bottom: 2em);
+}
+
 .about__title {
   @include spacing(margin, $top: 0.5em, $bottom: 0.5em);
   @include text($align: center);
@@ -12,8 +16,6 @@
 }
 
 .about__content {
-  margin-bottom: 2em;
-
   @include breakpoint-up(small) {
     /* display: grid; */
     /* grid-template-columns: 1fr; */
