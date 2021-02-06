@@ -16,28 +16,16 @@
 }
 
 .about__content {
-  @include breakpoint-up(small) {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: repeat(2, 1fr); */
-    /* place-items: center; */
-    /* margin: 0 auto; */
-  }
-
   @include breakpoint-up(medium) {
     display: flex;
     justify-content: center;
   }
-  /* @include breakpoint-up(large) {
-    justify-content: center;
-  } */
 }
 
 .about__paragraphs {
   max-width: $text-width;
 
   @include breakpoint-up(small) {
-    /* @include spacing(margin, $right: 2em); */
     @include spacing(margin, $left: auto, $right: auto);
   }
 
@@ -47,26 +35,9 @@
   }
 }
 
-/* .about__links {
-  @include breakpoint-up(small) {
-    width: $text-width;
-    align-self: flex-start;
-  }
-} */
-
 .about__link a {
   position: relative;
   white-space: nowrap; //because otherwise the after looks terrible
-
-  /* &::after {
-    @include link-after(-10%, 4px, 2px, 105%, $primary-colour);
-    transform: skew(-24deg) rotate(-0.5deg) scale(0);
-  }
-
-  &:hover::after,
-  &:focus::after {
-    transform: skew(-24deg) rotate(-0.5deg) scale(1);
-  } */
 }
 
 .about__avatar {
