@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /imgs/
+Sitemap: https://www.nicm42.co.uk/sitemap.xml
