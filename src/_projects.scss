@@ -72,7 +72,7 @@
 
 .projects__buttons {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   @include spacing(margin, $top: 0.5em);
 
   @include breakpoint-up(medium) {
@@ -105,7 +105,7 @@
   transition: color 300ms ease-in-out;
 
   &:not(:last-of-type) {
-    margin-left: 2em;
+    //margin-left: 2em;
     @include spacing(margin, $right: 2em);
   }
 
