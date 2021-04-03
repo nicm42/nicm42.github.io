@@ -1,4 +1,8 @@
-$breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
+$breakpoints-up: (
+  'small': '40em',
+  'medium': '50em',
+  'large': '60em',
+);
 
 @mixin breakpoint-up($size) {
   @media (min-width: map-get($breakpoints-up, $size)) {
@@ -6,7 +10,14 @@ $breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
   }
 }
 
-@mixin text($size: null, $weight: null, $line-height: null, $colour: null, $align: null, $transform: null) {
+@mixin text(
+  $size: null,
+  $weight: null,
+  $line-height: null,
+  $colour: null,
+  $align: null,
+  $transform: null
+) {
   @if $size != null {
     font-size: $size;
   }
@@ -59,7 +70,7 @@ $breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
       margin-bottom: $bottom;
     }
   }
-  
+
   @if $left != null {
     @if $type == padding {
       padding-left: $left;
@@ -67,7 +78,7 @@ $breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
     @if $type == margin {
       margin-left: $left;
     }
-  }  
+  }
 }
 
 @mixin link-after($left, $bottom, $height, $width, $bgcolour) {
@@ -77,6 +88,6 @@ $breakpoints-up: ("small": "376px", "medium": "1050px", "large": "1400px");
   bottom: $bottom;
   height: $height;
   width: $width;
-  background-color: $bgcolour;  
+  background-color: $bgcolour;
   transition: transform 300ms ease-in-out;
 }
