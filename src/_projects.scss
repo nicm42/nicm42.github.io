@@ -72,12 +72,12 @@
 
   li {
     position: relative;
-    display: inline;
+    display: inline-block;
     padding-right: 1em;
 
     &:before {
       position: absolute;
-      content: url(../imgs/bullet.png);
+      content: url(imgs/bullet.png);
       left: -12px; //bullet is 8px wide, plus a bit to make sure there's a gap
       //vertically centre the bullets - I don't know why it only works with these numbers being different
       top: 55%;
