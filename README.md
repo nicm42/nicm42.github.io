@@ -27,7 +27,7 @@ Just one page with my projects and some information about me and contact methods
 * SCSS
 
 ## Setup
-To view this project visit the [site](https://nicm42.github.io/) or download the files and open index.html
+To view this project visit the [site](https://nicm42.co.uk/) or download the files and open index.html
 
 ## Status
 Project is: _in progress_ because there are always new projects to update
