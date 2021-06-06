@@ -10,20 +10,21 @@
 
 .contact__icon {
   @include spacing(margin, $left: 1.5em);
-}
 
-.contact__icons a,
-.contact__attribute a,
-.contact__attribute a:visited {
-  @include text($colour: $secondary-link-colour, $size: 1.5rem);
-  transition: color 300ms ease-in-out;
+  & img {
+    filter: invert(78%) sepia(12%) saturate(844%) hue-rotate(185deg)
+      brightness(94%) contrast(83%);
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .contact__icons a:hover,
 .contact__icons a:focus {
   @include text($colour: $primary-colour);
-}
 
-.contact__attribute {
-  @include text($size: 0.75rem);
+  & img {
+    filter: invert(20%) sepia(64%) saturate(5504%) hue-rotate(348deg)
+      brightness(100%) contrast(89%);
+  }
 }
