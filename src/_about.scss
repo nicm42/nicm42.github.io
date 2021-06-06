@@ -36,8 +36,7 @@
 }
 
 .about__link a {
-  position: relative;
-  white-space: nowrap; //because otherwise the after looks terrible
+  @include spacing(margin, $left: 0.5em);
 }
 
 .about__avatar {
