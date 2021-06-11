@@ -5,11 +5,20 @@
   background-size: cover;
   background-position: -6em bottom;
   max-height: 7em;
-  @include text($colour: white, $align: right);
+  @include text($align: right);
 }
 
 .contact__icon {
-  @include spacing(margin, $left: 1.5em);
+  @include spacing(margin, $left: 1em);
+
+  & a {
+    /* use flex to centre image inside link
+    - need inline to make it not fill the width */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px; //to make sure all icons have at least 44px target
+  }
 
   & img {
     filter: invert(78%) sepia(12%) saturate(844%) hue-rotate(185deg)
