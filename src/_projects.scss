@@ -88,11 +88,12 @@
 
 .projects__buttons {
   display: flex;
-  //justify-content: center;
+  justify-content: center;
   @include spacing(margin, $top: 0.5em);
 
   @include breakpoint-up(medium) {
     @include text($align: left);
+    justify-content: flex-start;
   }
 }
 
