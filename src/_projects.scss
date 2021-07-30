@@ -3,6 +3,11 @@
   @include text($align: center);
 }
 
+.projects__fem {
+  @include spacing(margin, $bottom: 2em);
+  @include text($align: center);
+}
+
 .project {
   @include spacing(padding, $bottom: 5em);
   max-width: calc(#{$project-image-width} + #{$text-width});
