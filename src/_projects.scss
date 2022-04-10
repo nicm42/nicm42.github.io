@@ -61,6 +61,10 @@
   }
 }
 
+.projects__date {
+  font-style: italic;
+}
+
 .projects__about a {
   position: relative;
   white-space: nowrap; //because otherwise the after looks terrible
