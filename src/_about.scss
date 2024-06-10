@@ -41,6 +41,7 @@
 
 .about__avatar {
   max-width: 12.5em;
+
   @include spacing(margin, $top: 1em, $left: auto, $right: auto);
 
   @include breakpoint-up(medium) {

@@ -6,6 +6,8 @@
     "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": "true",
     "prettier/prettier": true,
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "scss/at-if-no-null": null,
+    "no-descending-specificity": null
   }
 }

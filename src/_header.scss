@@ -1,5 +1,6 @@
 header {
   @include spacing(padding, $bottom: 0.5em);
+
   background-image: url('imgs/background.jpg');
   background-size: cover;
   max-height: 15em;
@@ -7,13 +8,14 @@ header {
 
 nav {
   @include spacing(padding, $top: 1em, $bottom: 0.5em);
-  background-color: white;
+
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.75) 75%,
-    rgba(255, 255, 255, 0) 100%
+    rgb(255 255 255 / 100%) 0%,
+    rgb(255 255 255 / 75%) 75%,
+    rgb(255 255 255 / 0%) 100%
   );
+  background-color: white;
 }
 
 .nav__links {
@@ -21,15 +23,18 @@ nav {
 }
 
 .nav__link {
-  position: relative;
-  @include spacing(margin, $right: 1.5em);
   list-style-type: none;
+  position: relative;
+
+  @include spacing(margin, $right: 1.5em);
   @include text($weight: 700);
 }
 
 .header__title {
   @include spacing(padding, $top: 3em);
-  font-family: 'Merienda', cursive;
+
+  font-family: Merienda, cursive;
+
   @include text($line-height: 1.2);
 }
 
