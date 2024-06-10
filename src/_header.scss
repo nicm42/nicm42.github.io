@@ -37,11 +37,3 @@ nav {
 
   @include text($line-height: 1.2);
 }
-
-h1 {
-  @include text($size: 4rem, $weight: 400, $colour: $primary-colour);
-}
-
-h2 {
-  @include text($size: 2rem, $weight: 400, $colour: white);
-}
