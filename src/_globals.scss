@@ -1,44 +1,40 @@
 @font-face {
   font-family: Khula;
   font-weight: 300;
-  src: url(./fonts/Khula/Khula-Light.ttf);
+  src: url('../fonts/Khula/Khula-Light.ttf');
 }
 
 @font-face {
   font-family: Khula;
   font-weight: 400;
-  src: url(./fonts/Khula/Khula-Regular.ttf);
+  src: url('../fonts/Khula/Khula-Regular.ttf');
 }
 
 @font-face {
   font-family: Khula;
   font-weight: 600;
-  src: url(./fonts/Khula/Khula-SemiBold.ttf);
+  src: url('../fonts/Khula/Khula-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Khula;
   font-weight: 700;
-  src: url(./fonts/Khula/Khula-Bold.ttf);
+  src: url('../fonts/Khula/Khula-Bold.ttf');
 }
 
 @font-face {
   font-family: Merienda;
   font-weight: 400;
-  src: url(./fonts/Merienda/Merienda-Regular.ttf);
+  src: url('../fonts/Merienda/Merienda-Regular.ttf');
 }
 
 html {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 }
 
@@ -51,9 +47,11 @@ html {
 body {
   @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
-  font-family: 'Khula', sans-serif;
-  @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
+
   background-color: $section-background-colour;
+  font-family: Khula, sans-serif;
+
+  @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
 }
 
 ul,
@@ -67,18 +65,42 @@ p {
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
 }
 
-h3 {
-  @include text($size: 2rem, $weight: 700, $colour: $primary-colour);
+h1 {
+  @include text(
+    $size: 4rem,
+    $line-height: 1,
+    $weight: 700,
+    $colour: $primary-colour
+  );
+}
+
+h2 {
+  @include text(
+    $size: 3rem,
+    $line-height: 1,
+    $weight: 700,
+    $colour: $primary-colour
+  );
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  @include text($colour: $secondary-colour);
+}
+
+a:focus,
+a:hover,
+a:visited {
+  @include text($colour: $secondary-link-colour-darker);
 }
 
 a,
@@ -93,14 +115,4 @@ a:focus,
 a:hover {
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.2em;
-}
-
-a {
-  @include text($colour: $secondary-colour);
-}
-
-a:focus,
-a:hover,
-a:visited {
-  @include text($colour: $secondary-link-colour-darker);
 }

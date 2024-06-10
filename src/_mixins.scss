@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 $breakpoints-up: (
   'small': '40em',
   'medium': '50em',
@@ -5,7 +7,7 @@ $breakpoints-up: (
 );
 
 @mixin breakpoint-up($size) {
-  @media (min-width: map-get($breakpoints-up, $size)) {
+  @media (min-width: map.get($breakpoints-up, $size)) {
     @content;
   }
 }
@@ -48,6 +50,7 @@ $breakpoints-up: (
     @if $type == padding {
       padding-top: $top;
     }
+
     @if $type == margin {
       margin-top: $top;
     }
@@ -57,6 +60,7 @@ $breakpoints-up: (
     @if $type == padding {
       padding-right: $right;
     }
+
     @if $type == margin {
       margin-right: $right;
     }
@@ -66,6 +70,7 @@ $breakpoints-up: (
     @if $type == padding {
       padding-bottom: $bottom;
     }
+
     @if $type == margin {
       margin-bottom: $bottom;
     }
@@ -75,6 +80,7 @@ $breakpoints-up: (
     @if $type == padding {
       padding-left: $left;
     }
+
     @if $type == margin {
       margin-left: $left;
     }
@@ -82,12 +88,12 @@ $breakpoints-up: (
 }
 
 @mixin link-after($left, $bottom, $height, $width, $bgcolour) {
-  content: '';
-  position: absolute;
-  left: $left;
-  bottom: $bottom;
-  height: $height;
-  width: $width;
   background-color: $bgcolour;
+  bottom: $bottom;
+  content: '';
+  height: $height;
+  left: $left;
+  position: absolute;
   transition: transform 300ms ease-in-out;
+  width: $width;
 }

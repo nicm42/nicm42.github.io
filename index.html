@@ -24,7 +24,6 @@
   <meta property="twitter:image" content="https://www.nicm42.co.uk/image.png">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.png">
-	<link rel="stylesheet" href="styles.css">
   <link rel="preload" as="image" href="imgs/background.jpg">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-53YS8C07DL"></script>
@@ -47,24 +46,25 @@
     </nav>
     <div class="header__title container">
       <h1>Nic</h1>
-      <h2>Web developer</h2>
+      <p>Front End Developer</p>
     </div>
   </header>
 
   <main>
     <section id="about" class="container" aria-labelledby="about-title">
-      <h3 id="about-title" class="about__title">About</h3>
+      <h2 id="about-title" class="about__title">About</h2>
       <div class="about__content">
         <div class="about__paragraphs">
           <p class="about__text">
-            I'm a developer in South Oxfordshire. I take websites created in Drupal and WordPress and make them match the designs. I mainly use SCSS along with some jQuery, JavaScript and React.
+            I'm a front end developer in South Oxfordshire and a keen champion of accessibility.
+            I mainly use SCSS along with some jQuery, JavaScript and React, but have also dabbled in Tailwind, AlpineJS, React, Vue and Svelte.
           </p>
           <p class="about__text">
             I enjoy the combination of problem solving and making things pretty.
           </p>          <p class="about__text">I also like red.</p>
-          <p class="about__link"><img width="32" height="32" src="imgs/github.svg" alt="GitHub"><a target="_blank" rel="noreferrer" href="https://github.com/nicm42/"
+          <p class="about__link"><img width="32" height="32" src="imgs/github.svg" alt="GitHub"><a rel="noreferrer" href="https://github.com/nicm42/"
               title="GitHub">View my work on GitHub</a></p>
-          <p class="about__link"><img width="32" height="32" src="imgs/blog.svg" alt="Blog"><a target="_blank" rel="noreferrer" href="https://blog.nicm42.co.uk/"
+          <p class="about__link"><img width="32" height="32" src="imgs/blog.svg" alt="Blog"><a rel="noreferrer" href="https://blog.nicm42.co.uk/"
               title="Blog">Read my blog</a></p>
         </div>
         <div class="about__avatar">
@@ -75,92 +75,56 @@
 
     <div class="spacer"></div>
 
-    <section id="projects" class="container aria-labelledby="projects-title">
-      <h3 id="projects-title" class="projects__title">Projects</h3>
+    <section id="projects" class="container" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="projects__title">Projects</h2>
 
-      <p class="projects__fem"><a target="_blank" rel="noreferrer" href="https://www.frontendmentor.io/profile/nicm42/solutions" title="Frontend Mentor">View my Frontend Mentor Solutions</a> - where the aim is to create pixel-perfect solutions to designs given as images</p>
+      <p class="projects__fem"><a rel="noreferrer" href="https://www.frontendmentor.io/profile/nicm42/solutions" title="Frontend Mentor">View my Frontend Mentor Solutions</a> - where the aim is to create pixel-perfect solutions to designs given as images</p>
 
       <div class="project">
-        <div class="projects__image"><img width="500" height="241" src="imgs/newportgroup.jpg" alt="The Newport Group screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">The Newport Group website</h4>
-          <p class="projects__date">April 2021</p>
-          <p class="projects__about">A multi-page website written with React, using React Hooks and Intersection Observer.</a></p>
-          <ul class="projects__languages"><li>HTML</li> <li>SCSS</li> <li>React</li> <li>React Router</li> <li>Jest</li> <li>Enzyme</li> <li>Testing Library</li> <li>Cypress</li> <li>Parcel</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://the-newport-group.nicm42.co.uk/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/The-Newport-Group">View code</a>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="projects__image"><img width="500" height="247" src="imgs/wordpresslorem.jpg" alt="Wordpress Lorem screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">Alternative Ipsum Posts</h4>
-          <p class="projects__date">July 2021</p>
-          <p class="projects__about">Proof of concept, rather than a real app. This takes (not visible) posts from the WordPress.com API and combines them with random images from the Unsplash API, using Express to hide my API key, to add blogposts into a Bootstrap Accordion.</a> <p class="projects__note">Note, this is hosted on Render, so may take a little while for the server to start up.</p>
-          <ul class="projects__languages"><li>React</li> <li>TypeScript</li> <li>Bootstrap</li> <li>Express</li><li>Jest</li> <li>Testing Library</li> <li>Cypress</li> <li>WordPress.com API</li> <li>Unsplash API</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://wordpress-lorem.onrender.com/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/wordpress-lorem">View code</a>
+        <h3 class="projects__header">Book Charting</h3>
+        <div class="projects__info">
+          <div class="projects__image"><img width="500" height="241" src="imgs/book-charting.jpg" alt="Book Charting screenshot" loading="lazy"></div>
+          <div class="projects__text">
+            <p class="projects__date">January-February 2024</p>
+            <p class="projects__about">A site to chart the types of books I've read and acquired each year using Google Sheets data.</a></p>
+            <p class="projects__note">Note, this is hosted on Render, so may take a little while for the server to start up.</p>
+            <ul class="projects__languages"><li>HTML</li> <li>CSS</li> <li>TypeScript</li> <li>Express</li> <li>ChartJS</li> <li>Google Sheets</li> <li>Vite</li></ul>
+            <div class="projects__buttons">
+              <a class="projects__button" rel="noreferrer" href="https://book-charting-nm.onrender.com/">View site</a>
+              <a class="projects__button" rel="noreferrer" href="https://github.com/nicm42/book-charting">View code</a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="project">
-        <div class="projects__image"><img width="500" height="251" src="imgs/reddwarf.jpg" alt="Red Dwarf XII screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">Red Dwarf XII animation</h4>
-          <p class="projects__date">October 2020</p>
-          <p class="projects__about">Copy of the Red Dwarf XII opening animation using CSS</p>
-          <ul class="projects__languages"><li>HTML</li> <li>SCSS</li> <li>Gulp</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://red-dwarf-xii.nicm42.co.uk/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/Red-Dwarf-XII-animation">View code</a>
+        <h3 class="projects__header">Murdle Cards</h3>
+        <div class="projects__info">
+          <div class="projects__image"><img width="500" height="241" src="imgs/murdle-cards.jpg" alt="Murdle Cards screenshot" loading="lazy"></div>
+          <div class="projects__text">
+            <p class="projects__date">December 2023</p>
+            <p class="projects__about">Suspect cards used in Murdle with some accessibility improvements.</a></p>
+            <ul class="projects__languages"><li>a11y</li> <li>HTML</li> <li>SCSS</li> <li>TypeScript</li> <li>React</li> <li>Vite</li> <li>Cypress</li></ul>
+            <div class="projects__buttons">
+              <a class="projects__button" rel="noreferrer" href="https://murdle-cards.pages.dev/">View site</a>
+              <a class="projects__button" rel="noreferrer" href="https://github.com/nicm42/murdle-cards">View code</a>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="project">
-        <div class="projects__image"><img width="500" height="207" src="imgs/bookfinder.jpg" alt="Book Search screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">Book Search</h4>
-          <p class="projects__date">June 2021</p>
-          <p class="projects__about">Chingu Solo Project: the brief was to create a book search using the Google Books API. I included the ability to search by title or author and to page through results.</p>
-          <ul class="projects__languages"><li>React</li> <li>React Context</li> <li>TypeScript</li> <li>Styled Components</li> <li>Jest</li> <li>Testing Library</li> <li>Cypress</li> <li>Google Books API</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://book-search.nicm42.co.uk/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/Bookfinder">View
-              code</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="projects__image"><img width="500" height="249" src="imgs/guessthenumber.jpg" alt="Guess the Number screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">Guess the Number</h4>
-          <p class="projects__date">May 2021</p>
-          <p class="projects__about">Guess the number game that tells you how close you are using hot and cold, rather than higher and lower</p>
-          <ul class="projects__languages"><li>HTML</li> <li>SCSS</li> <li>TypeScript</li> <li>Jest</li> <li>Cypress</li> <li>Parcel</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://guess-the-number.nicm42.co.uk/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/Guess-the-Number">View code</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="projects__image"><img width="500" height="248" src="imgs/clicktheshape.jpg" alt="Click the Shape screenshot" loading="lazy"></div>
-        <div class="projects__text">
-          <h4 class="projects__header">Click the Shape</h4>
-          <p class="projects__date">November 2021</p>
-          <p class="projects__about">A quick game where you aim to click the shape when it's twice the size. Harder than it
-          looks!</p> <p class="projects__note">Note, this is hosted on Render, so may take a little while for the server to start up. And the free MongoDB database has expired, so the top scores will return an error.</p>
-          <ul class="projects__languages"><li>Svelte</li> <li>SCSS</li> <li>Express</li> <li>Jest</li> <li>Testing Library</li> <li>Cypress</li> <li>MongoDB</li> <li>Rollup</li></ul>
-          <div class="projects__buttons">
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://click-the-shape.onrender.com/">View site</a>
-            <a class="projects__button" target="_blank" rel="noreferrer" href="https://github.com/nicm42/click-the-shape">View code</a>
+        <h3 class="projects__header">Guess the Number</h3>
+        <div class="projects__info">
+          <div class="projects__image"><img width="500" height="241" src="imgs/guess-the-number.jpg" alt="Guess the Number screenshot" loading="lazy"></div>
+          <div class="projects__text">
+            <p class="projects__date">February 2024</p>
+            <p class="projects__about">A standard guess the number game, except it will tell you how warm you are, rather than higher or lower.</a></p>
+            <ul class="projects__languages"><li>HTML</li> <li>SCSS</li> <li>TypeScript</li> <li>Vue</li> <li>Vite</li></ul>
+            <div class="projects__buttons">
+              <a class="projects__button" rel="noreferrer" href="https://guess-the-number-vue.pages.dev/">View site</a>
+              <a class="projects__button" rel="noreferrer" href="https://github.com/nicm42/guess-the-number-vue">View code</a>
+            </div>
           </div>
         </div>
       </div>
@@ -168,11 +132,10 @@
 
     <footer id="contact">
       <div class="contact__content container">
-        <h3 class="contact__title">Contact</h3>
+        <h2 class="contact__title">Contact</h2>
         <div class="contact__icons">
           <!-- Icons from https://icomoon.io -->
-          <span class="contact__icon"><a target="_blank" rel="noreferrer" href="https://twitter.com/nicm4242" aria-label="Twitter" title="Twitter"><img width="32" height="32" src="imgs/twitter.svg" alt="Twitter" loading="lazy"></a></span>
-          <span class="contact__icon"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nicmayer42/" aria-label="LinkedIn" title="LinkedIn"><img width="32" height="32" src="imgs/linkedin.svg" alt="LinkedIn" loading="lazy"></a></span>
+          <span class="contact__icon"><a rel="noreferrer" href="https://www.linkedin.com/in/nicmayer42/" aria-label="LinkedIn" title="LinkedIn"><img width="32" height="32" src="imgs/linkedin.svg" alt="LinkedIn" loading="lazy"></a></span>
           <span class="contact__icon">
             <a
               href='mai&#108;to&#58;&#110;ic&#37;6Da&#121;&#101;r%3&#52;&#50;&#64;%67m%61i&#108;&#46;com' aria-label="Email" title="Email"><img width="32" height="32" src="imgs/email.svg" alt="Email" loading="lazy"></a>
@@ -182,5 +145,6 @@
     </footer>
   </main>
 
+  <script type="module" src="./src/script.js"></script>
 </body>
 </html>

@@ -1,30 +1,34 @@
 #contact {
-  @include spacing(padding, $top: 0.5em, $bottom: 0.5em);
+  @include spacing(padding, $top: 0.75em, $bottom: 0.5em);
+
   background-color: $background-colour;
-  background-image: url('imgs/background.jpg');
-  background-size: cover;
+  background-image: url('../imgs/background.jpg');
   background-position: -6em bottom;
+  background-size: cover;
   max-height: 7em;
+
   @include text($align: right);
 }
 
 .contact__icon {
   @include spacing(margin, $left: 1em);
+  display: inline-block;
 
   & a {
+    align-items: center;
+
     /* use flex to centre image inside link
     - need inline to make it not fill the width */
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    padding: 6px; //to make sure all icons have at least 44px target
+    padding: 6px; // to make sure all icons have at least 44px target
   }
 
   & img {
     filter: invert(78%) sepia(12%) saturate(844%) hue-rotate(185deg)
       brightness(94%) contrast(83%);
-    width: 32px;
     height: 32px;
+    width: 32px;
   }
 }
 
