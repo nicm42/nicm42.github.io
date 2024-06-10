@@ -12,7 +12,7 @@
 
 ## General info
 
-Just one page with my projects and some information about me and contact methods.
+Just one page with my projects, some information about me and contact methods.
 
 ## Screenshots
 
@@ -27,7 +27,17 @@ Just one page with my projects and some information about me and contact methods
 
 ## Setup
 
-To view this project visit the [site](https://www.nicm42.co.uk/) or download the files and open index.html
+To view this project [visit the site](https://www.nicm42.co.uk/) or download the files, open a terminal in that folder and install locally using npm:
+
+```
+npm install
+```
+
+Then run the app locally:
+
+```
+npm run dev
+```
 
 ## Status
 
