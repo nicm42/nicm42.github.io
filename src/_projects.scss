@@ -18,8 +18,13 @@
   }
 
   @include breakpoint-up(medium) {
-    display: flex;
     margin: 0 auto;
+  }
+}
+
+.projects__info {
+  @include breakpoint-up(medium) {
+    display: flex;
   }
 }
 
@@ -35,7 +40,7 @@
   @include breakpoint-up(medium) {
     @include text($align: left);
 
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -46,17 +51,13 @@
     @include text($align: unset);
     @include spacing(margin, $left: 1em, $right: 1em);
 
-    width: 50%;
+    width: 40%;
   }
 }
 
 .projects__header {
   @include spacing(bottom, $bottom: 0.5em);
-  @include text($size: 1.25rem, $align: center);
-
-  @include breakpoint-up(medium) {
-    @include text($align: left);
-  }
+  @include text($size: 2rem, $align: center);
 }
 
 .projects__date {
@@ -76,20 +77,13 @@
   // adding the left margin here to make space for the bullets
   @include spacing(margin, $top: 0.5em, $left: 12px);
   @include text($weight: 300);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
 
   li {
-    display: inline-block;
-    padding-right: 1em;
-    position: relative;
-
-    &::before {
-      content: url('imgs/bullet.png');
-      left: -12px; // bullet is 8px wide, plus a bit to make sure there's a gap
-      position: absolute;
-
-      // vertically centre the bullets - I don't know why it only works with these numbers being different
-      top: 55%;
-      transform: translateY(-60%);
+    &::marker {
+      color: $primary-colour;
     }
   }
 }

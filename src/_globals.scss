@@ -65,8 +65,22 @@ p {
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
 }
 
-h3 {
-  @include text($size: 2rem, $weight: 700, $colour: $primary-colour);
+h1 {
+  @include text(
+    $size: 4rem,
+    $line-height: 1,
+    $weight: 700,
+    $colour: $primary-colour
+  );
+}
+
+h2 {
+  @include text(
+    $size: 3rem,
+    $line-height: 1,
+    $weight: 700,
+    $colour: $primary-colour
+  );
 }
 
 img {
