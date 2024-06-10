@@ -2,7 +2,7 @@
   @include spacing(padding, $top: 0.75em, $bottom: 0.5em);
 
   background-color: $background-colour;
-  background-image: url('imgs/background.jpg');
+  background-image: url('../imgs/background.jpg');
   background-position: -6em bottom;
   background-size: cover;
   max-height: 7em;

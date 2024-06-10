@@ -1,7 +1,7 @@
 header {
   @include spacing(padding, $bottom: 0.5em);
 
-  background-image: url('imgs/background.jpg');
+  background-image: url('../imgs/background.jpg');
   background-size: cover;
   max-height: 15em;
 }
