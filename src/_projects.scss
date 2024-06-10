@@ -10,6 +10,7 @@
 
 .project {
   @include spacing(padding, $bottom: 5em);
+
   max-width: calc(#{$project-image-width} + #{$text-width});
 
   &:last-of-type {
@@ -28,18 +29,13 @@
   }
 }
 
-.projects__image,
-.projects__text {
-  @include breakpoint-up(medium) {
-    width: 50%;
-  }
-}
-
 .projects__text {
   max-width: $text-width;
 
   @include breakpoint-up(medium) {
     @include text($align: left);
+
+    width: 50%;
   }
 }
 
@@ -49,6 +45,8 @@
   @include breakpoint-up(medium) {
     @include text($align: unset);
     @include spacing(margin, $left: 1em, $right: 1em);
+
+    width: 50%;
   }
 }
 
@@ -67,7 +65,7 @@
 
 .projects__about a {
   position: relative;
-  white-space: nowrap; //because otherwise the after looks terrible
+  white-space: nowrap; // because otherwise the after looks terrible
 }
 
 .projects__note {
@@ -75,20 +73,21 @@
 }
 
 .projects__languages {
-  //adding the left margin here to make space for the bullets
+  // adding the left margin here to make space for the bullets
   @include spacing(margin, $top: 0.5em, $left: 12px);
   @include text($weight: 300);
 
   li {
-    position: relative;
     display: inline-block;
     padding-right: 1em;
+    position: relative;
 
-    &:before {
+    &::before {
+      content: url('imgs/bullet.png');
+      left: -12px; // bullet is 8px wide, plus a bit to make sure there's a gap
       position: absolute;
-      content: url(imgs/bullet.png);
-      left: -12px; //bullet is 8px wide, plus a bit to make sure there's a gap
-      //vertically centre the bullets - I don't know why it only works with these numbers being different
+
+      // vertically centre the bullets - I don't know why it only works with these numbers being different
       top: 55%;
       transform: translateY(-60%);
     }
@@ -98,10 +97,12 @@
 .projects__buttons {
   display: flex;
   justify-content: center;
+
   @include spacing(margin, $top: 0.5em);
 
   @include breakpoint-up(medium) {
     @include text($align: left);
+
     justify-content: flex-start;
   }
 }
@@ -109,8 +110,15 @@
 .projects__buttons a {
   text-decoration: none;
 }
+
 .projects__button {
+  background: white;
+  border: 2px solid $secondary-colour;
+  cursor: pointer;
   position: relative;
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+
   @include spacing(
     padding,
     $top: 1em,
@@ -118,28 +126,23 @@
     $bottom: 0.5em,
     $left: 1.5em
   );
-  border: 2px solid $secondary-colour;
-  background: white;
   @include text(
     $size: 0.75rem,
     $weight: 600,
     $colour: $secondary-colour,
     $transform: uppercase
   );
-  cursor: pointer;
-  z-index: 1;
-  transition: color 300ms ease-in-out;
 
   &:not(:last-of-type) {
-    //margin-left: 2em;
     @include spacing(margin, $right: 2em);
   }
 
   &::after {
     @include link-after(0, 0, 100%, 100%, $secondary-colour);
-    z-index: -1;
+
     transform: scale(0);
     transform-origin: top right;
+    z-index: -1;
   }
 
   &:hover::after,
