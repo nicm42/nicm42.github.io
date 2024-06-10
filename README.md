@@ -7,10 +7,8 @@
 - [General info](#general-info)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
-- [Learnings](#learnings)
 - [Setup](#setup)
 - [Status](#status)
-- [Contact](#contact)
 
 ## General info
 
@@ -27,11 +25,6 @@ Just one page with my projects and some information about me and contact methods
 - JavaScript
 - Vite
 
-## Learnings
-
-- Figma
-- SCSS
-
 ## Setup
 
 To view this project visit the [site](https://www.nicm42.co.uk/) or download the files and open index.html
@@ -39,7 +32,3 @@ To view this project visit the [site](https://www.nicm42.co.uk/) or download the
 ## Status
 
 Project is: _in progress_ because there are always new projects to update
-
-## Contact
-
-Created by [nicm42](https://www.twitter.com/nicm4242) - feel free to contact me!
