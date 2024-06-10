@@ -36,4 +36,12 @@ nav {
   font-family: Merienda, cursive;
 
   @include text($line-height: 1.2);
+
+  p {
+    @include text(
+      $size: 2rem,
+      $weight: 400,
+      $colour: $section-background-colour
+    );
+  }
 }
