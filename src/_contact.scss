@@ -1,5 +1,5 @@
 #contact {
-  @include spacing(padding, $top: 0.5em, $bottom: 0.5em);
+  @include spacing(padding, $top: 0.75em, $bottom: 0.5em);
 
   background-color: $background-colour;
   background-image: url('imgs/background.jpg');
@@ -12,6 +12,7 @@
 
 .contact__icon {
   @include spacing(margin, $left: 1em);
+  display: inline-block;
 
   & a {
     align-items: center;
