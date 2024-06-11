@@ -35,8 +35,10 @@
   }
 }
 
-.about__link a {
-  @include spacing(margin, $left: 0.5em);
+.about__link {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
 }
 
 .about__avatar {
