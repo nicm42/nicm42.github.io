@@ -25,6 +25,7 @@
 .projects__info {
   @include breakpoint-up(medium) {
     display: flex;
+    gap: 1rem;
   }
 }
 
