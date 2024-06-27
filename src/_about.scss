@@ -39,6 +39,12 @@
   display: flex;
   align-items: flex-end;
   gap: 0.5em;
+
+  @media (prefers-color-scheme: dark) {
+    img {
+      filter: invert(100%);
+    }
+  }
 }
 
 .about__avatar {
