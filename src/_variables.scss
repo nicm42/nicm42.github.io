@@ -2,7 +2,36 @@ $primary-colour: #f1262e;
 $secondary-colour: #101c65;
 $secondary-link-colour: #a2b5dd;
 $secondary-link-colour-darker: #5d69b2;
+$secondary-link-colour-lighter: #bfc2d9;
 $background-colour: #070b0c;
 $section-background-colour: #fcfcfc;
 $text-width: 60ch;
 $project-image-width: 320px;
+
+:root {
+  --secondary-colour: #{$secondary-colour};
+  --background-colour: #{$background-colour};
+  --section-background-colour: #{$section-background-colour};
+  --secondary-link-colour-visited: #{$secondary-link-colour-darker};
+  --nav-background: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 100%) 0%,
+    rgb(255 255 255 / 75%) 75%,
+    rgb(255 255 255 / 0%) 100%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --secondary-colour: #{$secondary-link-colour};
+    --background-colour: #{$section-background-colour};
+    --section-background-colour: #{$background-colour};
+    --secondary-link-colour-visited: #{$secondary-link-colour-lighter};
+    --nav-background: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 100%) 0%,
+      rgb(0 0 0 / 50%) 75%,
+      rgb(0 0 0 / 0%) 100%
+    );
+  }
+}
