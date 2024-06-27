@@ -106,8 +106,8 @@
 }
 
 .projects__button {
-  background: white;
-  border: 2px solid $secondary-colour;
+  background: var(--section-background-colour);
+  border: 2px solid var(--secondary-colour);
   cursor: pointer;
   position: relative;
   transition: color 300ms ease-in-out;
@@ -123,7 +123,7 @@
   @include text(
     $size: 0.75rem,
     $weight: 600,
-    $colour: $secondary-colour,
+    $colour: var(--secondary-colour),
     $transform: uppercase
   );
 
@@ -132,7 +132,7 @@
   }
 
   &::after {
-    @include link-after(0, 0, 100%, 100%, $secondary-colour);
+    @include link-after(0, 0, 100%, 100%, var(--secondary-colour));
 
     transform: scale(0);
     transform-origin: top right;
@@ -147,7 +147,7 @@
 
   &:hover,
   &:focus {
-    @include text($colour: white);
+    @include text($colour: var(--section-background-colour));
   }
 
   &:active {

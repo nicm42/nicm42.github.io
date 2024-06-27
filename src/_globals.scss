@@ -48,10 +48,14 @@ body {
   @include spacing(margin, $top: 0, $right: 0, $bottom: 0, $left: 0);
   @include spacing(padding, $top: 0, $right: 0, $bottom: 0, $left: 0);
 
-  background-color: $section-background-colour;
+  background-color: var(--section-background-colour);
   font-family: Khula, sans-serif;
 
-  @include text($size: 100%, $line-height: 1.6, $colour: $background-colour);
+  @include text(
+    $size: 100%,
+    $line-height: 1.6,
+    $colour: var(--background-colour)
+  );
 }
 
 ul,
@@ -94,13 +98,13 @@ img {
 }
 
 a {
-  @include text($colour: $secondary-colour);
+  @include text($colour: var(--secondary-colour));
 }
 
 a:focus,
 a:hover,
 a:visited {
-  @include text($colour: $secondary-link-colour-darker);
+  @include text($colour: var(--secondary-link-colour-visited));
 }
 
 a,
