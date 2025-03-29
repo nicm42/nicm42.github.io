@@ -27,7 +27,7 @@ Just one page with my projects, some information about me and contact methods.
 
 ## Setup
 
-To view this project [visit the site](https://www.nicm42.co.uk/) or download the files, open a terminal in that folder and install locally using npm:
+To view this project [visit the site](https://www.nicm42.me.uk/) or download the files, open a terminal in that folder and install locally using npm:
 
 ```
 npm install
